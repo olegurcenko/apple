@@ -58,7 +58,7 @@ if (document.getElementById('mainIndex')) {
 
         }
     }
-    // move()
+    move()
 }
 if (document.getElementById('mainIphone')) {
     var iphoneSESection = document.getElementById('iphoneSEAds');
