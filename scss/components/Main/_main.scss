@@ -1,0 +1,1308 @@
+// !indexHTML
+
+.main-index {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: auto;
+
+
+
+    .block {
+        height: 90vh;
+        margin-top: 5vh;
+        display: flex;
+        scroll-snap-align: center;
+        box-shadow: 0px 19px 21px 0px rgba(0, 0, 0, .3);
+
+        &:last-child {
+            margin-bottom: 5vh;
+        }
+    }
+
+    .event {
+        h1{
+            color: var(--text-color);
+            font-size: 48px;
+        }
+        a{
+            font-size: 21px;
+            color: var(--text-color);
+            font-weight: 600;
+            &:hover{
+                color: var(--text-color-hover-blue);
+            }
+        }
+        .macbook {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            background-size: 50% 50% !important;
+            width: 30%;
+            min-width: 300px;
+            height: 250px;
+            border-radius: 100%;
+            background-position: center;
+            position: static;
+            // left: 50%;
+            // top: 50%;
+            // margin: -75px 0 0 -48px;
+            perspective: 500px;
+
+            .shadow {
+                position: absolute;
+                width: 60px;
+                height: 0px;
+                // left: 40px;
+                top: 160px;
+                transform: rotateX(80deg) rotateY(0deg) rotateZ(0deg);
+                box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3);
+                animation: shadow infinite 7s ease;
+            }
+
+            .inner {
+                z-index: 20;
+                // position: absolute;
+                width: 150px;
+                height: 96px;
+                left: 0;
+                top: 0;
+                transform-style: preserve-3d;
+                transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+                animation: rotate infinite 7s ease;
+
+                .screen {
+                    width: 150px;
+                    height: 96px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    border-radius: 7px;
+                    background: #ddd;
+                    transform-style: preserve-3d;
+                    transform-origin: 50% 93px;
+                    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                    animation: lid-screen infinite 7s ease;
+                    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0) 100%);
+                    background-position: left bottom;
+                    background-size: 300px 300px;
+                    box-shadow: inset 0 3px 7px rgba(255, 255, 255, 0.5);
+
+                    .logo {
+                        position: absolute;
+                        width: 20px;
+                        height: 24px;
+                        left: 50%;
+                        top: 50%;
+                        margin: -12px 0 0 -10px;
+                        transform: rotateY(180deg) translateZ(0.1px);
+                    }
+
+                    .face-one {
+                        width: 150px;
+                        height: 96px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        border-radius: 7px;
+                        background: #d3d3d3;
+                        transform: translateZ(2px);
+                        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+
+                        .mac-name {
+                            position: absolute;
+                            top: 85px;
+                            left: 57px;
+                            font-size: 6px;
+                            color: #666
+                        }
+
+                        .camera {
+                            width: 3px;
+                            height: 3px;
+                            border-radius: 100%;
+                            background: #000;
+                            position: absolute;
+                            left: 50%;
+                            top: 4px;
+                            margin-left: -1.5px;
+                        }
+
+                        .display {
+                            width: 130px;
+                            height: 74px;
+                            margin: 10px;
+                            background: url("https://upload.wikimedia.org/wikipedia/en/9/98/MacOS_Monterey_Desktop.png") no-repeat center center #000;
+                            background-size: 100% 100%;
+                            border-radius: 1px;
+                            position: relative;
+                            box-shadow: inset 0 0 2px rgba(0, 0, 0, 1);
+
+                            .shade {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 130px;
+                                height: 74px;
+                                background: linear-gradient(-135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 47%, rgba(255, 255, 255, 0) 48%);
+                                animation: screen-shade infinite 7s ease;
+                                background-size: 300px 200px;
+                                background-position: 0px 0px;
+                            }
+                        }
+                    }
+                }
+
+                .body {
+                    width: 150px;
+                    height: 96px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    border-radius: 7px;
+                    background: #cbcbcb;
+                    transform-style: preserve-3d;
+                    transform-origin: 50% bottom;
+                    transform: rotateX(-90deg);
+                    animation: lid-body infinite 7s ease;
+                    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+
+                    .face-one {
+                        width: 150px;
+                        height: 96px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        border-radius: 7px;
+                        transform-style: preserve-3d;
+                        background: #dfdfdf;
+                        animation: lid-keyboard-area infinite 7s ease;
+                        transform: translateZ(-2px);
+                        background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+                    }
+
+                    .touchpad {
+                        width: 40px;
+                        height: 31px;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        border-radius: 4px;
+                        margin: -44px 0 0 -18px;
+                        background: #cdcdcd;
+                        background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+                        box-shadow: inset 0 0 3px #888;
+                    }
+
+                    .keyboard {
+                        width: 130px;
+                        height: 45px;
+                        position: absolute;
+                        left: 7px;
+                        top: 41px;
+                        border-radius: 4px;
+                        transform-style: preserve-3d;
+                        background: #cdcdcd;
+                        background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+                        box-shadow: inset 0 0 3px #777;
+                        padding: 0 0 0 2px;
+
+                        .key {
+                            width: 6px;
+                            height: 6px;
+                            background: #444;
+                            float: left;
+                            margin: 1px;
+                            transform: translateZ(-2px);
+                            border-radius: 2px;
+                            box-shadow: 0 -2px 0 #222;
+                            animation: keys infinite 7s ease;
+
+                            .space {
+                                width: 45px;
+                            }
+
+                            .f {
+                                height: 3px;
+                            }
+
+                            .pad {
+                                width: 5px;
+                                height: 5px;
+                                background: #333;
+                                border-radius: 100%;
+                                position: absolute;
+
+                                .one {
+                                    left: 20px;
+                                    top: 20px;
+                                }
+
+                                .two {
+                                    right: 20px;
+                                    top: 20px;
+                                }
+
+                                .three {
+                                    right: 20px;
+                                    bottom: 20px;
+                                }
+
+                                .four {
+                                    left: 20px;
+                                    bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+        }
+
+        5% {
+            transform: rotateX(-20deg) rotateY(-20deg) rotateZ(0deg);
+        }
+
+        20% {
+            transform: rotateX(30deg) rotateY(200deg) rotateZ(0deg);
+        }
+
+        25% {
+            transform: rotateX(-60deg) rotateY(150deg) rotateZ(0deg);
+        }
+
+        60% {
+            transform: rotateX(-20deg) rotateY(130deg) rotateZ(0deg);
+        }
+
+        65% {
+            transform: rotateX(-20deg) rotateY(120deg) rotateZ(0deg);
+        }
+
+        80% {
+            transform: rotateX(-20deg) rotateY(375deg) rotateZ(0deg);
+        }
+
+        85% {
+            transform: rotateX(-20deg) rotateY(357deg) rotateZ(0deg);
+        }
+
+        87% {
+            transform: rotateX(-20deg) rotateY(360deg) rotateZ(0deg);
+        }
+
+        100% {
+            transform: rotateX(-20deg) rotateY(360deg) rotateZ(0deg);
+        }
+    }
+
+    @keyframes lid-screen {
+        0% {
+            transform: rotateX(0deg);
+            background-position: left bottom;
+        }
+
+        5% {
+            transform: rotateX(50deg);
+            background-position: left bottom;
+        }
+
+        20% {
+            transform: rotateX(-90deg);
+            background-position: -150px top;
+        }
+
+        25% {
+            transform: rotateX(15deg);
+            background-position: left bottom;
+        }
+
+        30% {
+            transform: rotateX(-5deg);
+            background-position: right top;
+        }
+
+        38% {
+            transform: rotateX(5deg);
+            background-position: right top;
+        }
+
+        48% {
+            transform: rotateX(0deg);
+            background-position: right top;
+        }
+
+        90% {
+            transform: rotateX(0deg);
+            background-position: right top;
+        }
+
+        100% {
+            transform: rotateX(0deg);
+            background-position: right center;
+        }
+    }
+
+    @keyframes lid-body {
+        0% {
+            transform: rotateX(-90deg);
+
+        }
+
+        50% {
+            transform: rotateX(-90deg);
+
+        }
+
+        100% {
+            transform: rotateX(-90deg);
+
+        }
+    }
+
+    @keyframes lid-keyboard-area {
+        0% {
+            background-color: #dfdfdf;
+        }
+
+        50% {
+            background-color: #bbb;
+        }
+
+        100% {
+            background-color: #dfdfdf;
+        }
+    }
+
+    @keyframes screen-shade {
+        0% {
+            background-position: -20px 0px;
+        }
+
+        5% {
+            background-position: -40px 0px;
+        }
+
+        20% {
+            background-position: 200px 0;
+        }
+
+        50% {
+            background-position: -200px 0;
+        }
+
+        80% {
+            background-position: 0px 0px;
+        }
+
+        85% {
+            background-position: -30px 0;
+        }
+
+        90% {
+            background-position: -20px 0;
+        }
+
+        100% {
+            background-position: -20px 0px;
+        }
+    }
+
+    @keyframes keys {
+        0% {
+            box-shadow: 0 -2px 0 #222;
+        }
+
+        5% {
+            box-shadow: 1 -1px 0 #222;
+        }
+
+        20% {
+            box-shadow: -1px 1px 0 #222;
+        }
+
+        25% {
+            box-shadow: -1px 1px 0 #222;
+        }
+
+        60% {
+            box-shadow: -1px 1px 0 #222;
+        }
+
+        80% {
+            box-shadow: 0 -2px 0 #222;
+        }
+
+        85% {
+            box-shadow: 0 -2px 0 #222;
+        }
+
+        87% {
+            box-shadow: 0 -2px 0 #222;
+        }
+
+        100% {
+            box-shadow: 0 -2px 0 #222;
+        }
+    }
+
+    @keyframes shadow {
+        0% {
+            transform: rotateX(80deg) rotateY(0deg) rotateZ(0deg);
+            box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        5% {
+            transform: rotateX(80deg) rotateY(10deg) rotateZ(0deg);
+            box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        20% {
+            transform: rotateX(30deg) rotateY(-20deg) rotateZ(-20deg);
+            box-shadow: 0 0 50px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        25% {
+            transform: rotateX(80deg) rotateY(-20deg) rotateZ(50deg);
+            box-shadow: 0 0 35px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        60% {
+            transform: rotateX(80deg) rotateY(0deg) rotateZ(-50deg) translateX(30px);
+            box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        100% {
+            box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .event {
+        // padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #020202;
+
+        @keyframes changeGradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .apple-photo-logo {
+
+            height: 70%;
+            // margin-left: 20px;
+            background: rgb(63, 94, 251);
+            background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 33%, rgba(63, 94, 251, 1) 69%, rgba(252, 70, 107, 1) 100%);
+            background-size: 400% 400%;
+            animation: changeGradient 15s linear infinite;
+        }
+
+        span {
+            position: relative;
+            margin-right: 20px;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            bottom: 45%;
+            height: 0px;
+
+            h1,
+            h3,
+            a {
+                margin-bottom: 10px;
+                padding: 0;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 48px;
+                // font-weight: 400;
+                display: flex;
+
+                &::before {
+                    content: '';
+                    height: 50px;
+                    width: 50px;
+                    background-size: contain;
+                    background-image: url(../assets/images/WHITE\ LOGO.png);
+                }
+            }
+
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .macBook {
+        flex-direction: column;
+        background-color: var(--bg-color-trueBlack);
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+        p {
+            color: #f06100;
+            margin-top: 7%;
+            font-size: 20px;
+        }
+
+        .macBookTitle {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                h1 {
+                    font-size: 56px;
+
+                    margin: 10px;
+                }
+
+                h3 {
+                    font-size: 28px;
+                }
+
+                h1,
+                h3 {
+                    color: var(--text-color);
+
+                }
+            }
+        }
+
+        .btns {
+            @include btnsBase;
+            width: 300px;
+
+            li {
+                .buy {
+                    @include buyBtnBase // color: var(--text-color);
+                }
+
+                &:last-child {
+                    color: var(--text-color-hover-blue);
+                }
+            }
+        }
+
+        img {
+            // position: relative;
+            margin-bottom: 0;
+        }
+
+    }
+
+    .iphone14 {
+        overflow-x: hidden;
+        flex-direction: column;
+        background-color: var(--bg-color-trueBlack);
+        justify-content: space-between;
+        align-items: center;
+
+        .iphone-title {
+            position: relative;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 15%;
+            height: 0;
+
+            li {
+                margin-block: 7px;
+
+                h1 {
+                    font-size: 48px;
+                    padding: 0;
+                    margin: 15px;
+                }
+
+                h3 {
+                    font-size: 21px;
+                    padding: 0;
+                }
+            }
+        }
+
+        .btns {
+            position: relative;
+            width: 300px;
+            top: 40%;
+            @include btnsBase;
+
+            li {
+                .buy {
+                    @include buyBtnBase;
+                    // color: var(--text-color);
+                }
+
+                &:last-child {
+                    color: var(--text-color-hover-blue);
+                }
+            }
+        }
+    }
+
+    .iphoneSE {
+        background-color: var(--bg-white_color);
+        justify-content: center;
+
+        ul {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                &:first-child {
+                    img {
+                        margin-bottom: 20px;
+                        margin: auto;
+                    }
+
+                    height: 22px;
+                }
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    font-size: 48px;
+                    font-weight: 600;
+                    background-clip: text;
+                    background-image: linear-gradient(90deg, #1e3791 0%, #2948b1 40%, #3153c6 55%, #385fda 60%);
+                    color: transparent;
+                }
+
+                &:nth-child(4) {
+                    font-size: 21px;
+                    margin: 25px;
+                }
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .btns {
+                    margin: 0;
+                    width: 300px;
+                    @include btnsBase;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+
+                        .buy {
+                            @include buyBtnBase;
+                            // color: var(--text-color);
+                        }
+
+                        &:last-child {
+                            color: var(--text-color-hover-blue);
+                            font-size: 16px;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// !iphoneHTML
+.main-iphone {
+    .catalog-list-wrapper {
+        background-color: var(--bg-white_color);
+        display: flex;
+        justify-content: center;
+        padding-block: 7px;
+
+        .catalog-list {
+            display: flex;
+            justify-content: space-around;
+            overflow-x: auto;
+
+            .catalog-list-elem {
+                margin-inline: 20px;
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        span {
+                            &:nth-child(2) {
+                                color: #0066cc;
+                            }
+                        }
+                    }
+
+                    figure {
+                        height: 54px;
+                        background-position: center;
+                        width: fill-available;
+                        background-repeat: no-repeat;
+                    }
+
+                    span {
+                        font-size: 12px;
+
+                        &:nth-child(2) {
+                            color: #1d1d1f;
+                            text-wrap: nowrap;
+                        }
+
+                        &:nth-child(3) {
+                            color: #f06100;
+                        }
+                    }
+                }
+
+                #iphone14Pro {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/iphone_14_pro_light__dfhcc00ur2oi_large.svg);
+                    }
+                }
+
+                #iphone14 {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/iphone_14_light__fwknsxkf80uq_large.svg);
+                    }
+                }
+
+                #iphone13 {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/iphone_13_light__ewo3e0sf67o2_large.svg);
+                    }
+                }
+
+                #iphoneSE {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/iphone_se_light__fhg8duy6ffau_large.svg);
+                    }
+                }
+
+                #iphone12 {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/iphone_12_light__cxh2ll1zwpw2_large.svg);
+                    }
+                }
+
+                #compare {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/iphone_compare_light__f4jj7brpbvm2_large.svg);
+                    }
+                }
+
+                #airPods {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/airpods_light__8oj157p2476a_large.svg);
+                    }
+                }
+
+                #airTag {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/airtag_light__cb2bmnv6aoeu_large.svg);
+                    }
+                }
+
+                #accessories {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/accessories_light__ed5l6ipsevqu_large.svg);
+                    }
+                }
+
+                #appleCard {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/iphone_apple_card_light__dtut839e76c2_large.svg);
+                    }
+                }
+
+                #iosElem {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/iphone_ios_light__b8s4ws8o77iq_large.svg);
+                    }
+                }
+
+                #shopIphone {
+                    figure {
+                        background-image: url(https://www.apple.com/v/iphone/home/bo/images/chapternav/shop_iphone_light__b2toggskllle_large.svg);
+                    }
+                }
+            }
+        }
+    }
+
+    .announce-bar {
+        display: flex;
+        padding-block: 1rem;
+        background-color: var(--bg-color-grey);
+        // flex-direction: column;
+        justify-content: center;
+
+        // align-items: center;
+        .announce-bar-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                margin-block: .2rem;
+                font-size: 20px;
+
+                &:nth-child(2) {
+                    display: flex;
+
+                    a {
+                        margin-left: 1rem;
+                        color: #0066cc;
+
+                        &:hover {
+                            color: var(--text-color-hover-blue);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .iphone14-sect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--bg-white-color-1);
+        overflow-x: hidden;
+
+        .iphone14-sect-text-block {
+            margin-block: 2rem;
+
+            li {
+                text-align: center;
+                margin-bottom: 1rem;
+
+                &:nth-child(1) {
+                    font-size: 17px;
+                    color: #6e6e73;
+                }
+
+                &:nth-child(3) {
+                    color: #1f1f1d;
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+
+                &:nth-child(4) {
+                    color: #1f1f1d;
+                    font-size: 21px;
+                }
+
+                .btns {
+                    @include btnsBase;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+
+                        .buy {
+                            @include buyBtnBase;
+                            color: var(--text-color);
+                        }
+
+                        &:last-child {
+                            color: var(--text-color-hover-blue);
+                            font-size: 16px;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .iphone14pro-sect {
+        height: 100vh;
+        overflow-x: hidden;
+        flex-direction: column;
+        background-color: var(--bg-color-trueBlack);
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+
+        .iphone14pro-sect-list {
+            margin-top: 4rem;
+            // margin-top: 8%;
+            margin-inline: 2rem;
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                margin-block: 1.5rem;
+                text-align: center;
+                color: var(--text-color);
+
+                &:nth-child(2) {
+                    font-size: 48px;
+                }
+
+                &:nth-child(3) {
+                    font-size: 21px;
+                }
+
+                .btns {
+                    @include btnsBase;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+
+                        .buy {
+                            @include buyBtnBase;
+                            color: var(--text-color);
+                        }
+
+                        &:last-child {
+                            color: var(--text-color-hover-blue);
+                            font-size: 16px;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        figure {
+            width: 100vw;
+            height: 50vh;
+            background-image: url(../assets/images/iphone/hero_iphone14pro_spring__9xo85pm6sbmm_largetall_2x.jpg);
+            background-size: 140%;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+    }
+
+    .iphoneSE {
+        background-color: var(--bg-white_color);
+        justify-content: center;
+        display: flex;
+
+        ul {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                &:first-child {
+                    img {
+                        margin-bottom: 20px;
+                        margin: auto;
+                    }
+
+                    height: 22px;
+                }
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    font-size: 48px;
+                    font-weight: 600;
+                    background-clip: text;
+                    background-image: linear-gradient(90deg, #1e3791 0%, #2948b1 40%, #3153c6 55%, #385fda 60%);
+                    color: transparent;
+                }
+
+                &:nth-child(4) {
+                    font-size: 21px;
+                    margin: 25px;
+                }
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .btns {
+                    width: 300px;
+                    @include btnsBase;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+
+                        .buy {
+                            @include buyBtnBase
+                        }
+
+                        &:last-child {
+                            color: var(--text-color-hover-blue);
+                            font-size: 16px;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .guided-tour-sect {
+        background-color: var(--bg-white_color);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        figure {
+            background-image: url(../assets/images/iphone/guided_tour__c40f88on9o8y_large.jpg);
+            width: 95vw;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            border-radius: 20px;
+            margin-block: 1rem;
+        }
+
+        div {
+            
+            position: absolute;
+            align-self: start;
+            width: 50%;
+            height: 100%;
+            .guide-content {
+                display: flex;
+                flex-direction: column;
+                margin-left: 20%;
+                margin-top: 30%;
+                height: 40%;
+
+                span {
+                    &:nth-child(1) {
+                        font-size: 24px;
+                        color: var(--text-color);
+                        font-weight: 600;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: 48px;
+                        color: var(--text-color);
+                        font-weight: 600;
+                    }
+                }
+
+                a {
+                    background-color: var(--text-color);
+                    padding-block: 8px;
+                    padding-inline: 16px;
+                    border-radius: 100px;
+                    width: fit-content;
+                    margin-top: 1rem;
+                    font-weight: 600;
+
+                    &:hover {
+                        background-color: #d6d6da;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-index {
+        .btns {
+            top: 20% !important;
+
+            li {
+                a {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .iphoneSE {
+            .iphoneSE-title-list {
+                li {
+
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        font-size: 28px;
+                    }
+
+                    &:nth-child(4) {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        ul {
+                            li {
+                                a {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .macBook {
+
+            img,
+            ul li {
+                margin-top: 30px;
+            }
+
+            ul {
+                margin-bottom: 15%;
+            }
+
+            .macBookTitle {
+                li {
+                    h1 {
+                        font-size: 28px;
+                    }
+
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .btns {
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .iphone14 {
+            .iphone-title {
+                li {
+                    &:nth-child(1) {
+                        h3 {
+                            font-size: 21px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        h1 {
+                            font-size: 28px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        display: flex;
+                        justify-content: center;
+
+                        h3 {
+                            font-size: 21px;
+                            width: 70%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .btns {
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        // .event{
+        //     span{
+        //         h1{
+        //             font-size: 35px!important;
+        //             &::before{
+        //                 width: 35px!important;
+        //                 height: 35px!important;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+
+    .main-iphone {
+        .catalog-list-wrapper {
+            .catalog-list {
+                border-right: 3px solid #cac7c7;
+                border-left: 3px solid #cac7c7;
+            }
+        }
+        .iphoneSE {
+            .iphoneSE-title-list {
+                li {
+
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        font-size: 28px;
+                    }
+
+                    &:nth-child(4) {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        ul {
+                            li {
+                                a {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .guided-tour-sect{
+            div{
+                width: 80%;
+                .guide-content{
+                    margin-top: 40vh!important;
+                    span{
+                        font-size: 21px!important;
+                        &:nth-child(2){
+                            font-size: 24px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

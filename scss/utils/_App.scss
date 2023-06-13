@@ -1,0 +1,65 @@
+@import url(/assets/fonts/sfProDisplay/stylesheet.css);
+:root{
+    --main-color: #010101;
+    --text-color: #fafafa;
+    --radius: 15px;
+    --bg-white_color: #fbfbfd;
+    --bg-white-color-1: #ffffff;
+    --text-color-hover-blue: #0077ed;
+    --bg-color-trueBlack: #000000;
+    --bg-color-grey: #f5f5f7;
+
+}
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+  *{
+      padding: 0;
+      margin: 0;
+      font-family: 'San Francisco';
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+body{
+    background-color: #f3f4f6;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+input,
+button,
+textarea{
+    border: none;
+    outline: none;
+}
+
+// ! mixines
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin btnsBase {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin buyBtnBase {
+    padding-block: 8px;
+    padding-inline: 16px;
+    background-color: #0077ed;
+    border-radius: 100px;
+}
+
