@@ -111,5 +111,5 @@ if (document.getElementById('mainIphone')) {
             guidedTourSection.getElementsByTagName('figure')[0].style.backgroundPositionX = '75%';
 
         }
-    // move()
+    move()
 }
