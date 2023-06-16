@@ -107,6 +107,7 @@ if (document.getElementById('mainIphone')) {
             iphoneSESection.getElementsByTagName('img')[1].style.marginTop = '20px';
             iphoneSESection.getElementsByTagName('ul')[0].style.width = '90%';}
             // !iphone 14 section
+            iphone14Section.getElementsByTagName('img')[1].style.width = '100vw';
             // !guided tour section
             guidedTourSection.getElementsByTagName('figure')[0].style.backgroundPositionX = '75%';
 

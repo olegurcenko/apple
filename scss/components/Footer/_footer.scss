@@ -8,12 +8,13 @@
     .footer-content {
         width: 100%;
         .footer-content-list{
-            display: none;
+            // display: none;
+            width: 1000px;
+            margin: auto;
 
 
         .footer-content-firstElem {
             .footer-content-important-info {
-                width: 1000px;
 
                 li {
                     margin-block: .5rem;
@@ -107,7 +108,7 @@
             display: block;
             font-family: 'sfd_pro_displaymedium';
             width: 95%;
-            // margin-inline: auto;
+            margin-inline: auto;
             .dropdown{
                 position: relative;
                 display: block;
@@ -116,6 +117,7 @@
                 color: #6e6e73;
                 font-size: 16px;
                 padding-block: .5rem;
+                padding-inline: 2.5%;
                 width: 100%;
                 text-align: left;
                 &:focus{

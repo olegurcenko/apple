@@ -2078,10 +2078,8 @@ textarea {
   width: 100%;
 }
 .footer .footer-content .footer-content-list {
-  display: none;
-}
-.footer .footer-content .footer-content-list .footer-content-firstElem .footer-content-important-info {
   width: 1000px;
+  margin: auto;
 }
 .footer .footer-content .footer-content-list .footer-content-firstElem .footer-content-important-info li {
   margin-block: 0.5rem;
@@ -2156,6 +2154,7 @@ textarea {
   display: block;
   font-family: "sfd_pro_displaymedium";
   width: 95%;
+  margin-inline: auto;
 }
 .footer .footer-content .footer-content-dropdown .dropdown {
   position: relative;
@@ -2166,6 +2165,7 @@ textarea {
   color: #6e6e73;
   font-size: 16px;
   padding-block: 0.5rem;
+  padding-inline: 2.5%;
   width: 100%;
   text-align: left;
 }
