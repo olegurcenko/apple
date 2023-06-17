@@ -105,7 +105,7 @@
         }}
         // !dropdown Footer
         .footer-content-dropdown{
-            display: block;
+            display: none;
             font-family: 'sfd_pro_displaymedium';
             width: 95%;
             margin-inline: auto;
@@ -148,3 +148,13 @@
     }
 }
 .show{display: flex;}
+
+@media screen and (max-width: 1000px) {
+    #littleFooter{
+        display: block;
+    }
+    #mainFooter{
+        display: none;
+    }
+
+}

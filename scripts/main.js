@@ -61,12 +61,12 @@ if (document.getElementById('mainIndex')) {
     move()
 }
 if (document.getElementById('mainIphone')) {
+    window.addEventListener('resize', moveIphone);
     var iphoneSESection = document.getElementById('iphoneSEAds');
-    window.addEventListener('resize', move);
     var iphone14ProSection = document.getElementById('iphone14pro-sect');
     var iphone14Section = document.getElementById('iphone14-sect');
     var guidedTourSection = document.getElementById('guided-tour-sect');
-    function move() {
+    function moveIphone() {
         if (window.innerWidth > 1000) {
             // ! catalog section
             document.getElementsByClassName('catalog-list')[0].style.width = '80%';
@@ -112,5 +112,5 @@ if (document.getElementById('mainIphone')) {
             guidedTourSection.getElementsByTagName('figure')[0].style.backgroundPositionX = '75%';
 
         }
-    move()
+    moveIphone()
 }

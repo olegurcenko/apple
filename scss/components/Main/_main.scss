@@ -23,7 +23,7 @@
         h1{
             color: var(--text-color);
             font-size: 48px;
-        }
+            }
         a{
             font-size: 21px;
             color: var(--text-color);
@@ -899,10 +899,8 @@
         align-items: center;
         background-color: var(--bg-white-color-1);
         overflow-x: hidden;
-
         .iphone14-sect-text-block {
             margin-block: 2rem;
-
             li {
                 text-align: center;
                 margin-bottom: 1rem;
@@ -1133,6 +1131,356 @@
         }
     }
 }
+
+// ! TV
+#main-gallery{
+    .catalog-list-wrapper {
+        background-color: var(--bg-white_color);
+        display: flex;
+        justify-content: center;
+        padding-block: 7px;
+
+        .catalog-list {
+            display: flex;
+            justify-content: space-around;
+            overflow-x: auto;
+
+            .catalog-list-elem {
+                margin-inline: 20px;
+                #Apple-TV-4K{
+                    figure{
+                        background-image: url(https://www.apple.com/v/tv-home/j/images/chapternav/light/apple_tv4k_fill_light__b2wtl9srjwb6_large.svg);
+                    }
+                }
+                #Apple-TV-app{
+                    figure{
+                        background-image: url(https://www.apple.com/v/tv-home/j/images/chapternav/light/apple_tv_app_light__f6s7yq5zej2a_large.svg);
+                    }
+                }
+                #Apple-TV{
+                    figure{
+                        background-image: url(https://www.apple.com/v/tv-home/j/images/chapternav/light/apple_tv_plus_light__fjwmgqxuwomu_large.svg);
+                    }
+                }
+                #HomePod{
+                    figure{
+                        background-image: url(https://www.apple.com/v/tv-home/j/images/chapternav/light/homepod_light__b9tveb5xovhy_large.svg);
+                    }
+                }
+                #HomePod-Mini{
+                    figure{
+                        background-image: url(https://www.apple.com/v/tv-home/j/images/chapternav/light/homepodmini_light__genrqjukfl26_large.svg);
+                    }
+                }
+                #Home-App{
+                    figure{
+                        background-image: url(https://www.apple.com/v/tv-home/j/images/chapternav/light/homekit_light__bu42vvqsjaj6_large.svg);
+                    }
+                }
+                #Accessories{
+                    figure{
+                        background-image: url(https://www.apple.com/v/tv-home/j/images/chapternav/light/home_accessories_light__eu5v1y6592eu_large.svg);
+                    }
+                }
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        span {
+                            &:nth-child(2) {
+                                color: #0066cc;
+                            }
+                        }
+                    }
+
+                    figure {
+                        height: 54px;
+                        background-position: center;
+                        width: fill-available;
+                        background-repeat: no-repeat;
+                    }
+
+                    span {
+                        font-size: 12px;
+
+                        &:nth-child(2) {
+                            color: #1d1d1f;
+                            text-wrap: nowrap;
+                        }
+
+                        &:nth-child(3) {
+                            color: #f06100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .home_staff{
+        padding-block: 50px;
+        display: grid;
+        grid-template-columns: '';
+        img,
+        h1,
+        p{
+            width: 980px;
+            margin-inline: auto;
+        }
+        h1{
+            text-align: center;
+            font-size: 96px;
+            text-wrap: nowrap;
+            font-weight: 700;
+            font-family: 'sf_pro_displaymedium';
+            padding: 0;
+            margin-block: 0;
+        }
+        p{
+            font-size: 24px;
+            font-weight: 600;
+            color: #68686b;
+            text-align: center;
+            margin-top: .8em;
+        }
+    }
+    .home_staff_cards{
+        margin-left: auto;
+        margin-right: auto;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        padding: 0 24px;
+        display: grid;
+        grid-template-columns: repeat(12,minmax(0,1fr));
+        .home_staff_cards_elem{
+            grid-column: span 6;
+            padding-top: 20px;
+            border-radius: 20px;
+            &:nth-child(1){
+                background-color: #000000;
+                ul{
+                    li{
+                        &:nth-child(1){
+                            color: var(--text-color);
+                            font-family: 'sf_pro_displaymedium';
+                            p{
+                                text-align: center;
+                                &:nth-child(1){
+                                    font-size: 21px;
+                                    font-weight: 600;
+                                }
+                                &:nth-child(2){
+                                    font-size: 36px;
+                                    font-weight: 700;
+                                    margin-top: 10px;
+                                }
+                                &:nth-child(3){
+                                    font-size: 21px;
+                                    margin-top: 16px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            .btns {
+                                @include btnsBase;
+                                width: 300px;
+                                // text-align: center;
+                                margin-inline: auto;
+                                li {
+                                    display: flex;
+                                    align-items: center;
+
+            
+                                    .buy {
+                                        @include buyBtnBase;
+                                        color: var(--text-color);
+                                    }
+            
+                                    &:last-child {
+                                        color: var(--text-color-hover-blue);
+                                        font-size: 16px;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            img{
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                background-color: #ffffff;
+                ul{
+                    li{
+                        &:nth-child(1){
+                            color: #1d1d1f;
+                            font-family: 'sf_pro_displaymedium';
+                            p{
+                                text-align: center;
+                                &:nth-child(1){
+                                    font-size: 21px;
+                                    font-weight: 600;
+                                }
+                                &:nth-child(2){
+                                    font-size: 36px;
+                                    font-weight: 700;
+                                    margin-top: 10px;
+                                }
+                                &:nth-child(3){
+                                    font-size: 21px;
+                                    margin-top: 16px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            .btns {
+                                @include btnsBase;
+                                width: 300px;
+                                // text-align: center;
+                                margin-inline: auto;
+                                li {
+                                    display: flex;
+                                    align-items: center;
+
+            
+                                    .buy {
+                                        @include buyBtnBase;
+                                        color: var(--text-color);
+                                    }
+            
+                                    &:last-child {
+                                        color: var(--text-color-hover-blue);
+                                        font-size: 16px;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            img{
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                background-color: var(--bg-white-color-1);
+                ul{
+                    li{
+                        &:nth-child(1){
+                            color: #1d1d1f;
+                            font-family: 'sf_pro_displaymedium';
+                            img{
+                                display: block;
+                                margin-inline: auto;
+                            }
+                            p{
+                                text-align: center;
+                                &:nth-child(2){
+                                    font-size: 36px;
+                                    font-weight: 700;
+                                    margin-top: 10px;
+                                }
+                                &:nth-child(3){
+                                    font-size: 21px;
+                                    margin-top: 16px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            .btns {
+                                @include btnsBase;
+                                width: 300px;
+                                // text-align: center;
+                                margin-inline: auto;
+                                li {
+                                    display: flex;
+                                    align-items: center;
+
+            
+                                    .buy {
+                                        @include buyBtnBase;
+                                        color: var(--text-color);
+                                    }
+            
+                                    &:last-child {
+                                        color: var(--text-color-hover-blue);
+                                        font-size: 16px;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            img{
+                                margin-top: 20px;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(4){
+                background-color: var(--bg-white-color-1);
+                ul{
+                    li{
+                        &:nth-child(1){
+                            color: #1d1d1f;
+                            font-family: 'sf_pro_displaymedium';
+                            img{
+                                display: block;
+                                margin-inline: auto;
+                            }
+                            p{
+                                text-align: center;
+                                &:nth-child(2){
+                                    font-size: 36px;
+                                    font-weight: 700;
+                                    margin-top: 10px;
+                                }
+                                &:nth-child(3){
+                                    font-size: 21px;
+                                    margin-top: 16px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            a{
+                                display: block;
+                                margin-inline: auto;
+                                text-align: center;
+                                color: var(--text-color-hover-blue);
+                                font-size: 16px;
+                            }
+                        }
+                        &:nth-child(2){
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            img{
+                                margin-top: 20px;
+                                margin-left: 42px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     .main-index {

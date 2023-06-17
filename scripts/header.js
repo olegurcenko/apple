@@ -26,6 +26,7 @@ function move() {
             document.getElementById('header-menu-hidden').style.display = 'flex';
             document.getElementById('headerMenuList').style.display = 'none';
         }}
+move()
 const MenuOpener = document.getElementById('menuOpenBtn');
 const MenuCloser = document.getElementById('menuCloser');
 // MenuOpener.addEventListener('click', () => {
