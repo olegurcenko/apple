@@ -16,7 +16,7 @@ if (document.getElementById('mainIndex')) {
             // eventSection.getElementsByTagName('img')[0].style.height = '70%';
             // eventSection.getElementsByTagName('span')[0].style.bottom = '45%';
             // !iphone 14 section
-            iphone14Section.getElementsByTagName('img')[0].style.width = '150%';
+            iphone14Section.getElementsByTagName('img')[0].style.width = '100%';
         }
         if (500 < window.innerWidth && window.innerWidth < 900) {
             // ! iphoneSE section
@@ -113,4 +113,23 @@ if (document.getElementById('mainIphone')) {
 
         }
     moveIphone()
+}
+
+
+if (document.getElementById('main-gallery')) {
+    window.addEventListener('resize', moveGallery);
+
+    function moveGallery() {
+        if (window.innerWidth > 750) {
+            // ! catalog section
+            document.getElementsByClassName('catalog-list')[0].style.width = '100%';
+            document.getElementsByClassName('catalog-list')[0].style.justifyContent = 'center';
+        }
+        if (500 < window.innerWidth && window.innerWidth < 750){
+            // !catalog section
+            document.getElementsByClassName('catalog-list')[0].style.width = '95%';
+            document.getElementsByClassName('catalog-list')[0].style.justifyContent = 'unset';
+        }
+    }
+    moveGallery()
 }
