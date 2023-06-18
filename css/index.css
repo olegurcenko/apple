@@ -2515,7 +2515,10 @@ textarea {
     text-wrap: balance;
   }
   .block {
-    height: 70vh !important;
+    height: 80vh !important;
+  }
+  .main-index .iphone14 ul li:last-child h3 {
+    display: none;
   }
 }
 .footer {
