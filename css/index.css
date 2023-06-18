@@ -1508,6 +1508,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 .main-index .iphoneSE ul li .btns li {
   display: -webkit-box;
@@ -2427,7 +2428,7 @@ textarea {
     margin-top: 30px;
   }
   .main-index .macBook ul {
-    margin-bottom: 15%;
+    margin-bottom: 5%;
   }
   .main-index .macBook .macBookTitle li h1 {
     font-size: 28px;
@@ -2512,6 +2513,9 @@ textarea {
     width: inherit !important;
     font-size: 12px !important;
     text-wrap: balance;
+  }
+  .block {
+    height: 70vh !important;
   }
 }
 .footer {

@@ -25,7 +25,7 @@ if (document.getElementById('mainIndex')) {
             iphoneSESection.style.justifyContent = 'space-between';
             iphoneSESection.getElementsByTagName('img')[1].style.width = 'fit-content';
             iphoneSESection.getElementsByTagName('img')[1].style.height = '60%';
-            iphoneSESection.getElementsByTagName('ul')[0].style.marginTop = '20px';
+            // iphoneSESection.getElementsByTagName('ul')[0].style.marginTop = '20px';
             // !iphone14 section
             iphone14Section.getElementsByTagName('img')[0].style.width = '300%';
             // document.getElementsByClassName('btns').getElementsByTagName('li').getElementsByTagName('a')
@@ -42,7 +42,7 @@ if (document.getElementById('mainIndex')) {
             iphoneSESection.getElementsByTagName('img')[1].style.height = '60%';
             iphoneSESection.style.flexDirection = 'column';
             iphoneSESection.style.alignItems = 'center';
-            iphoneSESection.getElementsByTagName('img')[1].style.marginTop = '20px';
+            // iphoneSESection.getElementsByTagName('img')[1].style.marginTop = '20px';
             iphoneSESection.getElementsByTagName('ul')[0].style.width = '90%';
             // !macBook section
             macBookSection.getElementsByTagName('img')[0].style.width = '100%';

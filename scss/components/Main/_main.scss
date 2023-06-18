@@ -711,6 +711,7 @@
                     margin: 0;
                     width: 300px;
                     @include btnsBase;
+                    z-index: 2;
 
                     li {
                         display: flex;
@@ -1548,7 +1549,7 @@
             }
 
             ul {
-                margin-bottom: 15%;
+                margin-bottom: 5%;
             }
 
             .macBookTitle {
@@ -1700,5 +1701,8 @@
             text-wrap: balance;
 
         }
+    }
+    .block {
+        height: 70vh!important;
     }
 }
