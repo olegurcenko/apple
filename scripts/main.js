@@ -39,7 +39,7 @@ if (document.getElementById('mainIndex')) {
         }
         if (window.innerWidth < 500) {
             // !iphoneSE section
-            iphoneSESection.getElementsByTagName('img')[1].style.height = '60%';
+            iphoneSESection.getElementsByTagName('img')[1].style.height = '65%';
             iphoneSESection.style.flexDirection = 'column';
             iphoneSESection.style.alignItems = 'center';
             // iphoneSESection.getElementsByTagName('img')[1].style.marginTop = '20px';
@@ -95,7 +95,7 @@ if (document.getElementById('mainIphone')) {
             // iphoneSESection.getElementsByTagName('img')[1].style.height = '60%';
             iphoneSESection.getElementsByTagName('ul')[0].style.marginBlock = '20px';
             // !iphone 14 pro section
-            iphone14ProSection.getElementsByTagName('figure')[0].style.backgroundSize = '300%';
+            iphone14ProSection.getElementsByTagName('figure')[0].style.backgroundSize = '180%';
             // !iphone 14 section
             iphone14Section.getElementsByTagName('img')[1].style.width = '100%';
         }

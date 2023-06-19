@@ -455,6 +455,7 @@ textarea {
   width: 100%;
   height: 100%;
   background-color: #fbfbfd;
+  z-index: 999;
 }
 .hidden-menu-block ul {
   padding-top: 50px;
@@ -1678,6 +1679,9 @@ textarea {
   background-color: var(--bg-white-color-1);
   overflow-x: hidden;
 }
+.main-iphone .iphone14-sect img {
+  max-width: 1200px;
+}
 .main-iphone .iphone14-sect .iphone14-sect-text-block {
   margin-block: 2rem;
 }
@@ -2102,6 +2106,7 @@ textarea {
   margin-top: 0.8em;
 }
 #main-gallery .home_staff_cards {
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
   grid-column-gap: 24px;
@@ -2406,6 +2411,134 @@ textarea {
   border-bottom-left-radius: 20px;
   width: 100%;
 }
+#main-gallery .carouselSmartHouse {
+  margin-top: 80px;
+}
+#main-gallery .carouselSmartHouse h1 {
+  font-size: 64px;
+  text-align: center;
+}
+#main-gallery .carouselSmartHouse ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+#main-gallery .carouselSmartHouse ul li section {
+  background-color: var(--bg-white-color-1);
+  margin-inline: 20px;
+  border-radius: 20px;
+  width: 500px;
+  height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main-gallery .carouselSmartHouse ul li section .text-siri {
+  height: 200px !important;
+}
+#main-gallery .carouselSmartHouse ul li section .text-siri li {
+  height: 60px;
+}
+#main-gallery .carouselSmartHouse ul li section ul {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+#main-gallery .carouselSmartHouse ul li section ul li {
+  margin-top: 15px;
+}
+#main-gallery .carouselSmartHouse ul li section ul li p {
+  color: #1d1d1f;
+  font-family: "sf_pro_displaymedium";
+  text-align: center;
+  font-size: 24px;
+}
+#main-gallery .carouselSmartHouse ul li section ul li a {
+  font-size: 17px;
+  color: var(--text-color-hover-blue);
+}
+#main-gallery .carouselSmartHouse ul li section ul li .gradient {
+  font-size: 50px;
+  height: 60px;
+}
+@-webkit-keyframes animation-write {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes animation-write {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+#main-gallery .carouselSmartHouse ul li section ul .type-wrapper {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#main-gallery .carouselSmartHouse ul li section ul .type-wrapper .type {
+  font-family: monospace;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1e3791), color-stop(40%, #2948b1), color-stop(55%, #3153c6), color-stop(60%, #385fda));
+  background-image: linear-gradient(90deg, #1e3791 0%, #2948b1 40%, #3153c6 55%, #385fda 60%);
+  letter-spacing: 10px;
+  border-right: 2px solid var(--text-color-hover-blue);
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  width: 200px;
+  -webkit-animation: animation-write 3s steps(10) infinite, blinking 0.4s step-end infinite alternate;
+          animation: animation-write 3s steps(10) infinite, blinking 0.4s step-end infinite alternate;
+}
+#main-gallery .carouselSmartHouse ul li section img {
+  height: 280px;
+  width: 390px;
+  width: auto;
+}
 
 @media screen and (max-width: 900px) {
   .main-index .btns {
@@ -2514,8 +2647,20 @@ textarea {
     font-size: 12px !important;
     text-wrap: balance;
   }
-  .block {
+  .main-index .block {
     height: 80vh !important;
+    margin-top: 10vh !important;
+  }
+  .main-index .event {
+    padding-top: 10vh !important;
+  }
+  .main-index .iphoneSE {
+    padding-bottom: 10vh;
+  }
+  .main-index .iphoneSE .iphoneSE-title-list,
+  .main-index .iphoneSE .iphoneSEPhoto {
+    position: relative;
+    top: 5vh;
   }
   .main-index .iphone14 ul li:last-child h3 {
     display: none;

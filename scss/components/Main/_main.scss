@@ -900,6 +900,9 @@
         align-items: center;
         background-color: var(--bg-white-color-1);
         overflow-x: hidden;
+        img{
+            max-width: 1200px;
+        }
         .iphone14-sect-text-block {
             margin-block: 2rem;
             li {
@@ -1252,6 +1255,7 @@
         }
     }
     .home_staff_cards{
+        max-width: 1380px;
         margin-left: auto;
         margin-right: auto;
         grid-column-gap: 24px;
@@ -1498,6 +1502,103 @@
             }
         }
     }
+    .carouselSmartHouse{
+        margin-top: 80px;
+        h1{
+            font-size: 64px;
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            overflow-x: scroll;
+            li{
+                section{
+                    background-color: var(--bg-white-color-1);
+                    margin-inline: 20px;
+                    border-radius: 20px;
+                    width: 500px;
+                    height: 430px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    .text-siri{
+                        height: 200px!important;
+                        li{
+                            height: 60px;
+                        }
+                    }
+                    ul{
+                        height: 150px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        text-align: center;
+                        li{
+                            margin-top: 15px;
+                            p{
+                                color: #1d1d1f;
+                                font-family: 'sf_pro_displaymedium';
+                                text-align: center;
+                                font-size: 24px;
+                            }
+                            a{
+                                font-size: 17px;
+                                color: var(--text-color-hover-blue);
+                            }
+                            .gradient{
+                                font-size: 50px;
+                                height: 60px;
+                            }
+                            @keyframes animation-write {
+                                0%{
+                                    width: 0;
+                                }
+                                50% {
+                                    width: 100%;
+                                }
+                                100%{
+                                    width: 0;
+                                }
+                            }
+                            @keyframes blinking {
+                                50% {
+                                    border-color: transparent;
+                                }
+                            }
+                        }
+                        .type-wrapper{
+                            display: inline-block;
+                            width: fit-content;
+                            .type{
+                                font-family: monospace;
+                                background-clip: text;
+                                color: transparent;
+                                background-image: linear-gradient(90deg, #1e3791 0%, #2948b1 40%, #3153c6 55%, #385fda 60%);
+                                letter-spacing: 10px;
+                                border-right: 2px solid var(--text-color-hover-blue);
+                                // width: 100%;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-align: left;
+                                width: 200px;
+                                animation:
+                                    animation-write 3s steps(10) infinite,
+                                    blinking .4s step-end infinite alternate;
+                            }
+                            
+                        }
+                    }
+                    img{
+                        // overflow: clip;
+                        height: 280px;
+                        width: 390px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -1702,10 +1803,25 @@
 
         }
     }
-    .block {
-        height: 80vh!important;
-    }
+    
     .main-index{
+        .block {
+            height: 80vh!important;
+            // scroll-snap-align: start;
+            margin-top: 10vh!important;
+            
+        }
+        .event{
+            padding-top: 10vh!important;
+        }
+        .iphoneSE{
+            padding-bottom: 10vh;
+            .iphoneSE-title-list, 
+            .iphoneSEPhoto{
+                position: relative;
+                top: 5vh;
+            }
+        }
         .iphone14{
             ul{
                 li{
