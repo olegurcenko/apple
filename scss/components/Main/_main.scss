@@ -1510,13 +1510,18 @@
         }
         ul{
             display: flex;
-            overflow-x: scroll;
-            li{
+            // overflow-x: scroll;
+
+            .carousel-elem{
+                // &:first-child{
+                // // margin-left: calc((100% - 1000px) /2 - 20px);
+
+                // }
                 section{
                     background-color: var(--bg-white-color-1);
                     margin-inline: 20px;
                     border-radius: 20px;
-                    width: 500px;
+                    width: 400px;
                     height: 430px;
                     display: flex;
                     flex-direction: column;
@@ -1571,7 +1576,7 @@
                             display: inline-block;
                             width: fit-content;
                             .type{
-                                font-family: monospace;
+                                // font-family: monospace;
                                 background-clip: text;
                                 color: transparent;
                                 background-image: linear-gradient(90deg, #1e3791 0%, #2948b1 40%, #3153c6 55%, #385fda 60%);
@@ -1583,8 +1588,8 @@
                                 text-align: left;
                                 width: 200px;
                                 animation:
-                                    animation-write 3s steps(10) infinite,
-                                    blinking .4s step-end infinite alternate;
+                                    animation-write 3s steps(5) infinite,
+                                    // blinking .2s step-end infinite alternate;
                             }
                             
                         }
@@ -1599,8 +1604,104 @@
             }
         }
     }
-}
+    .accessories-slider{
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        margin-bottom: 40px;
+        h1{
+            text-align: center;
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        a{
+            display: block;
+            // width: 100%;
+            font-size: 21px;
+            color: var(--text-color-hover-blue);
+            text-align: center;
+            margin-inline: auto;
+            margin-bottom: 20px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .accessories-slider-list{
+            display: flex;
+            justify-content: start;
 
+            // grid-row-gap: 24px;
+            // padding: 0 24px;
+            overflow-x: scroll;
+            .accessories-slider-elem{
+                section{
+                    margin-top: 20px;
+                    width: 400px;
+                    height: 530px;
+                    padding-block: 15px;
+                    margin-inline: 20px;
+                    border-radius: 20px;
+                    background-color: var(--bg-white-color-1);
+                    ul{
+                        li{
+                            &:first-child{
+                                font-size: 24px;
+                                font-weight: 600;
+                                margin-bottom: 15px;
+                            }
+                            text-align: center;
+                            a{
+                                margin-top: 15px;
+                                font-size: 16px;
+                                height: 2rem;
+                            }
+                            &:last-child{
+                                figcaption{
+
+                                    color: var(--text-grey-color);
+                                    opacity: .8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1720px) {
+    #main-gallery{
+
+        .carouselSmartHouse{
+            // width: 100%;
+            // margin-inline: auto!important;
+            ul{
+                justify-content: center;
+                // .carousel-elem{
+                //     &:first-child{
+                //         margin-left: calc((100% - 1000px) / 2 - 20px);
+                        
+                //     }
+                // }
+                }
+            } }
+        }
+        .accessories-slider-list{
+            justify-content: center!important;
+
+        }
+@media screen and (min-width: 1040px) and (max-width: 1720px) {
+    #main-gallery .carouselSmartHouse ul .carousel-elem:first-child {
+        margin-left: calc((100% - 1000px) / 2 - 20px);  
+    }
+        .accessories-slider-list{
+            .accessories-slider-elem:first-child{
+                margin-left: calc((100% - 1000px) / 2 - 20px)!important;
+            }
+        }
+        
+
+}
 
 @media screen and (max-width: 900px) {
     .main-index {
@@ -1812,7 +1913,7 @@
             
         }
         .event{
-            padding-top: 10vh!important;
+            // padding-top: 10vh!important;
         }
         .iphoneSE{
             padding-bottom: 10vh;

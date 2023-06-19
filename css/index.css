@@ -2422,13 +2422,12 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: scroll;
 }
-#main-gallery .carouselSmartHouse ul li section {
+#main-gallery .carouselSmartHouse ul .carousel-elem section {
   background-color: var(--bg-white-color-1);
   margin-inline: 20px;
   border-radius: 20px;
-  width: 500px;
+  width: 400px;
   height: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2444,13 +2443,13 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-#main-gallery .carouselSmartHouse ul li section .text-siri {
+#main-gallery .carouselSmartHouse ul .carousel-elem section .text-siri {
   height: 200px !important;
 }
-#main-gallery .carouselSmartHouse ul li section .text-siri li {
+#main-gallery .carouselSmartHouse ul .carousel-elem section .text-siri li {
   height: 60px;
 }
-#main-gallery .carouselSmartHouse ul li section ul {
+#main-gallery .carouselSmartHouse ul .carousel-elem section ul {
   height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2463,20 +2462,20 @@ textarea {
       justify-content: space-around;
   text-align: center;
 }
-#main-gallery .carouselSmartHouse ul li section ul li {
+#main-gallery .carouselSmartHouse ul .carousel-elem section ul li {
   margin-top: 15px;
 }
-#main-gallery .carouselSmartHouse ul li section ul li p {
+#main-gallery .carouselSmartHouse ul .carousel-elem section ul li p {
   color: #1d1d1f;
   font-family: "sf_pro_displaymedium";
   text-align: center;
   font-size: 24px;
 }
-#main-gallery .carouselSmartHouse ul li section ul li a {
+#main-gallery .carouselSmartHouse ul .carousel-elem section ul li a {
   font-size: 17px;
   color: var(--text-color-hover-blue);
 }
-#main-gallery .carouselSmartHouse ul li section ul li .gradient {
+#main-gallery .carouselSmartHouse ul .carousel-elem section ul li .gradient {
   font-size: 50px;
   height: 60px;
 }
@@ -2512,14 +2511,13 @@ textarea {
     border-color: transparent;
   }
 }
-#main-gallery .carouselSmartHouse ul li section ul .type-wrapper {
+#main-gallery .carouselSmartHouse ul .carousel-elem section ul .type-wrapper {
   display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-#main-gallery .carouselSmartHouse ul li section ul .type-wrapper .type {
-  font-family: monospace;
+#main-gallery .carouselSmartHouse ul .carousel-elem section ul .type-wrapper .type {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -2531,15 +2529,90 @@ textarea {
   overflow: hidden;
   text-align: left;
   width: 200px;
-  -webkit-animation: animation-write 3s steps(10) infinite, blinking 0.4s step-end infinite alternate;
-          animation: animation-write 3s steps(10) infinite, blinking 0.4s step-end infinite alternate;
+  -webkit-animation: animation-write 3s steps(5) infinite;
+          animation: animation-write 3s steps(5) infinite;
 }
-#main-gallery .carouselSmartHouse ul li section img {
+#main-gallery .carouselSmartHouse ul .carousel-elem section img {
   height: 280px;
   width: 390px;
   width: auto;
 }
+#main-gallery .accessories-slider {
+  margin-bottom: 40px;
+}
+#main-gallery .accessories-slider h1 {
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+#main-gallery .accessories-slider a {
+  display: block;
+  font-size: 21px;
+  color: var(--text-color-hover-blue);
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
+#main-gallery .accessories-slider a:hover {
+  text-decoration: underline;
+}
+#main-gallery .accessories-slider .accessories-slider-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  overflow-x: scroll;
+}
+#main-gallery .accessories-slider .accessories-slider-list .accessories-slider-elem section {
+  margin-top: 20px;
+  width: 400px;
+  height: 530px;
+  padding-block: 15px;
+  margin-inline: 20px;
+  border-radius: 20px;
+  background-color: var(--bg-white-color-1);
+}
+#main-gallery .accessories-slider .accessories-slider-list .accessories-slider-elem section ul li {
+  text-align: center;
+}
+#main-gallery .accessories-slider .accessories-slider-list .accessories-slider-elem section ul li:first-child {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#main-gallery .accessories-slider .accessories-slider-list .accessories-slider-elem section ul li a {
+  margin-top: 15px;
+  font-size: 16px;
+  height: 2rem;
+}
+#main-gallery .accessories-slider .accessories-slider-list .accessories-slider-elem section ul li:last-child figcaption {
+  color: var(--text-grey-color);
+  opacity: 0.8;
+}
 
+@media screen and (min-width: 1720px) {
+  #main-gallery .carouselSmartHouse ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.accessories-slider-list {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+@media screen and (min-width: 1040px) and (max-width: 1720px) {
+  #main-gallery .carouselSmartHouse ul .carousel-elem:first-child {
+    margin-left: calc((100% - 1000px) / 2 - 20px);
+  }
+  .accessories-slider-list .accessories-slider-elem:first-child {
+    margin-left: calc((100% - 1000px) / 2 - 20px) !important;
+  }
+}
 @media screen and (max-width: 900px) {
   .main-index .btns {
     top: 20% !important;
@@ -2650,9 +2723,6 @@ textarea {
   .main-index .block {
     height: 80vh !important;
     margin-top: 10vh !important;
-  }
-  .main-index .event {
-    padding-top: 10vh !important;
   }
   .main-index .iphoneSE {
     padding-bottom: 10vh;
