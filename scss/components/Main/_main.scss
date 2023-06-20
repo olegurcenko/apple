@@ -1135,7 +1135,75 @@
         }
     }
 }
+// !IPHONE Catalog with products
+#main-iphone-catalog{
+    display: block;
+    // background-color: var(--text-bg-color-light);
+    h1{
+        // width: 100%;
+        text-align: center;
+        font-size: 64px;
+        margin-inline: auto;
+        // margin-block: 0;
+        // padding-block: 40px;
+    }
+    .iphone-catalog-wrapper{
+        padding-bottom: 80px;
 
+        ul{
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            grid-column-gap: 24px;
+            grid-row-gap: 24px;
+            padding: 0 24px;
+            li{
+                grid-column: span 6;
+                border-radius: 20px;
+                overflow-x: hidden;
+                // border: #000 1px solid;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                background-color: var(--bg-color-grey);
+                padding-bottom: 20px;
+                transition-duration: .5s;
+
+                &:hover{
+                    transition-duration: 1s;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+                }
+                img{
+                    width: 150%;
+                    overflow: hidden;
+                }
+                h2, p, a{
+                    font-family: 'sf_pro_displaymedium';
+                    text-align: center;
+                    position: relative;
+                    bottom: 30px;
+                    margin-top: 10px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                a{
+                    padding: 5px;
+                    border: #1d1d1f 1px solid;
+                    border-radius: 5px;
+                    // background-color: var(--text-grey-color);
+                    &:focus{
+                        background-color: var(--text-color-hover-blue);
+                        color: var(--bg-white-color-1);
+                    }
+                }
+            }
+        }
+    }
+}
 // ! TV
 #main-gallery{
     .catalog-list-wrapper {
@@ -1704,6 +1772,15 @@
 }
 
 @media screen and (max-width: 900px) {
+    #main-iphone-catalog{
+        .iphone-catalog-wrapper{
+            ul{
+                li{
+                    grid-column: span 12;
+                }
+            }
+        }
+    }
     #main-gallery{
         .catalog-list-wrapper{
             .catalog-list{
