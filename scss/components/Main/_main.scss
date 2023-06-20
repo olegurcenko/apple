@@ -1657,7 +1657,7 @@
                             }
                             &:last-child{
                                 figcaption{
-
+                                    font-size: 16px;
                                     color: var(--text-grey-color);
                                     opacity: .8;
                                 }
@@ -1685,10 +1685,10 @@
                 // }
                 }
             } }
-        }
-        .accessories-slider-list{
-            justify-content: center!important;
-
+            .accessories-slider-list{
+                justify-content: center!important;
+    
+            }
         }
 @media screen and (min-width: 1040px) and (max-width: 1720px) {
     #main-gallery .carouselSmartHouse ul .carousel-elem:first-child {
@@ -1704,6 +1704,51 @@
 }
 
 @media screen and (max-width: 900px) {
+    #main-gallery{
+        .catalog-list-wrapper{
+            .catalog-list{
+                justify-content: unset;
+            }
+        }
+        .accessories-slider{
+            h1{
+                font-size: 24px;
+            }
+            .accessories-slider-list{
+                .accessories-slider-elem{
+                    section{
+                        width: 350px!important;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        ul{
+                            li{
+                                &:last-child{
+                                    figcaption{
+                                        font-size: 14px!important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .carouselSmartHouse{
+            margin-block: 40px;
+            h1{
+                font-size: 24px;
+            }
+            ul{
+                .carousel-elem{
+                    section{
+                        width: 350px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
     .main-index {
         .btns {
             top: 20% !important;
@@ -1912,9 +1957,9 @@
             margin-top: 10vh!important;
             
         }
-        .event{
-            // padding-top: 10vh!important;
-        }
+        // .event{
+        //     // padding-top: 10vh!important;
+        // }
         .iphoneSE{
             padding-bottom: 10vh;
             .iphoneSE-title-list, 

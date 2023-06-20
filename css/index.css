@@ -2588,6 +2588,7 @@ textarea {
   height: 2rem;
 }
 #main-gallery .accessories-slider .accessories-slider-list .accessories-slider-elem section ul li:last-child figcaption {
+  font-size: 16px;
   color: var(--text-grey-color);
   opacity: 0.8;
 }
@@ -2598,13 +2599,12 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .accessories-slider-list {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
 }
-.accessories-slider-list {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-}
-
 @media screen and (min-width: 1040px) and (max-width: 1720px) {
   #main-gallery .carouselSmartHouse ul .carousel-elem:first-child {
     margin-left: calc((100% - 1000px) / 2 - 20px);
@@ -2614,6 +2614,37 @@ textarea {
   }
 }
 @media screen and (max-width: 900px) {
+  #main-gallery .catalog-list-wrapper .catalog-list {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  #main-gallery .accessories-slider h1 {
+    font-size: 24px;
+  }
+  #main-gallery .accessories-slider .accessories-slider-list .accessories-slider-elem section {
+    width: 350px !important;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #main-gallery .accessories-slider .accessories-slider-list .accessories-slider-elem section ul li:last-child figcaption {
+    font-size: 14px !important;
+  }
+  #main-gallery .carouselSmartHouse {
+    margin-block: 40px;
+  }
+  #main-gallery .carouselSmartHouse h1 {
+    font-size: 24px;
+  }
+  #main-gallery .carouselSmartHouse ul .carousel-elem section {
+    width: 350px;
+    overflow: hidden;
+  }
   .main-index .btns {
     top: 20% !important;
   }
