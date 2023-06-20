@@ -41,6 +41,7 @@ function dropMove(id) {
     if (document.getElementById(id).classList.contains('show'))
     {
         document.getElementById(id).classList.remove('show');
+        // console.log(document.getElementById(id).clientHeight + 'px');
         return;
     }
     if (!document.getElementById(id).classList.contains('show'))

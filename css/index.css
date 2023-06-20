@@ -2687,6 +2687,9 @@ textarea {
   }
 }
 @media screen and (max-width: 900px) {
+  #main-iphone-catalog h1 {
+    font-size: 32px;
+  }
   #main-iphone-catalog .iphone-catalog-wrapper ul li {
     grid-column: span 12;
   }

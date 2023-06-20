@@ -18,11 +18,13 @@ function move() {
             document.getElementById('headerMenuList').style.display = 'flex';
             document.getElementById('headerMenuList').style.width = '1000px';
             document.getElementById('header-menu-hidden').style.display = 'none';
-        } else if (700 < window.innerWidth && window.innerWidth < 1000) {
+        }  
+        if (700 < window.innerWidth && window.innerWidth < 1000) {
             document.getElementById('headerMenuList').style.display = 'flex';
             document.getElementById('headerMenuList').style.width = '90%';
             document.getElementById('header-menu-hidden').style.display = 'none';
-        } else if (window.innerWidth <= 700) {
+        }
+        if (window.innerWidth <= 700) {
             document.getElementById('header-menu-hidden').style.display = 'flex';
             document.getElementById('headerMenuList').style.display = 'none';
         }}

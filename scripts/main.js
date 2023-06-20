@@ -100,6 +100,8 @@ if (document.getElementById('mainIphone')) {
             iphone14Section.getElementsByTagName('img')[1].style.width = '100%';
         }
         if (window.innerWidth < 500) {
+            // !catalog section
+            document.getElementsByClassName('catalog-list')[0].style.justifyContent = 'unset';
             // !iphoneSE section
             iphoneSESection.getElementsByTagName('img')[1].style.height = '50vh';
             iphoneSESection.style.flexDirection = 'column';

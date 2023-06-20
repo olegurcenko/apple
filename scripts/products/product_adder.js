@@ -21,7 +21,7 @@ if (document.getElementById('iphone12-catalog-wrapper')){
 
 class Products {
 
-    render14() {
+    render() {
         let catalogUL = ''
         Catalog.forEach(({tag, name, price, img}) =>{
             // console.log(id, name, price, img)
@@ -47,4 +47,4 @@ class Products {
 }
 
 const products = new Products();
-products.render14();
+products.render();
