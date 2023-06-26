@@ -20,7 +20,8 @@
   *{
       padding: 0;
       margin: 0;
-      font-family: 'San Francisco';
+    //   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: 'San Francisco';
     &::-webkit-scrollbar{
         display: none;
     }
@@ -50,6 +51,68 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@mixin macBlock{
+    height: 90vh;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: space-around;
+        background-color: var(--bg-white_color);
+        margin-bottom: 1rem;
+}
+@mixin titleList{
+    .title-list{
+        // font-size: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        // margin-top: -10vh;
+        li{
+            text-align: center;
+            margin-block: 5px;
+            &:nth-child(1){
+                color: #f06100;
+                font-size: 21px;
+            }
+            &:nth-child(2){
+                font-size: 48px;
+                font-weight: 600;
+            }
+            &:nth-child(3){
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            &:nth-child(4){
+                font-size: 17px;
+                font-weight: 400;
+                margin-top: 15px;
+            }
+            &:nth-child(5){
+                .btns {
+                    @include btnsBase;
+                    width: 300px;
+                    // text-align: center;
+                    margin-inline: auto;
+                    li {
+                        display: flex;
+                        align-items: center;
+
+
+                        .buy {
+                            @include buyBtnBase;
+                            color: var(--text-color);
+                        }
+
+                        &:last-child {
+                            color: var(--text-color-hover-blue);
+                            font-size: 16px;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @mixin btnsBase {
     padding: 0;

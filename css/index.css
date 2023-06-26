@@ -2060,6 +2060,943 @@ textarea {
   color: var(--bg-white-color-1);
 }
 
+#main-mac .catalog-list-wrapper {
+  background-color: var(--bg-white_color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-block: 7px;
+}
+#main-mac .catalog-list-wrapper .catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow-x: auto;
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem {
+  margin-inline: 20px;
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #macbook-air figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/macbookair_light__f0o95rwae8ae_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #macbook-pro figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/macbook_pro_light__e791sjqzt32a_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #imac24 figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/imac_24_light__colyztscbeeu_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #macmini figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_mini_light__frtahmzmd4mm_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #mac-studio figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_mini_light__frtahmzmd4mm_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #macpro figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_pro_light__cj4dvg7thx5y_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #compare figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_compare_light__emml1umdv9m6_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #displays figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/displays_light__ewxqx5obdxci_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #accessories figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_accessories_light__cuds10wyptyu_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #sonoma figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_os_light__d0zczt34scq6_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem #shopMac figure {
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_shop_light__layuggud1xe2_large.svg);
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem a:hover span:nth-child(2) {
+  color: #0066cc;
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem a figure {
+  height: 54px;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem a span {
+  font-size: 12px;
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem a span:nth-child(2) {
+  color: #1d1d1f;
+  text-wrap: nowrap;
+}
+#main-mac .catalog-list-wrapper .catalog-list .catalog-list-elem a span:nth-child(3) {
+  color: #f06100;
+}
+#main-mac .announcement-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-block: 10px;
+  background-color: #f5f5f7;
+}
+#main-mac .announcement-bar p,
+#main-mac .announcement-bar a {
+  -webkit-margin-end: 0.3rem;
+          margin-inline-end: 0.3rem;
+  font-size: 16px;
+}
+#main-mac .announcement-bar a {
+  color: var(--text-color-hover-blue);
+}
+#main-mac .announcement-bar a:hover {
+  text-decoration: underline;
+}
+#main-mac .macbook-air15 {
+  height: 90vh;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-white_color);
+  margin-bottom: 1rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+#main-mac .macbook-air15 .title-list li {
+  text-align: center;
+  margin-block: 5px;
+}
+#main-mac .macbook-air15 .title-list li:nth-child(1) {
+  color: #f06100;
+  font-size: 21px;
+}
+#main-mac .macbook-air15 .title-list li:nth-child(2) {
+  font-size: 48px;
+  font-weight: 600;
+}
+#main-mac .macbook-air15 .title-list li:nth-child(3) {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#main-mac .macbook-air15 .title-list li:nth-child(4) {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+#main-mac .macbook-air15 .title-list li:nth-child(5) .btns {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  margin-inline: auto;
+}
+#main-mac .macbook-air15 .title-list li:nth-child(5) .btns li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac .macbook-air15 .title-list li:nth-child(5) .btns li .buy {
+  padding-block: 8px;
+  padding-inline: 16px;
+  background-color: #0077ed;
+  border-radius: 100px;
+  color: var(--text-color);
+}
+#main-mac .macbook-air15 .title-list li:nth-child(5) .btns li:last-child {
+  color: var(--text-color-hover-blue);
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac .macbook-air15 .title-list {
+  margin-top: -5vh;
+}
+#main-mac .macbook-air15 figure {
+  margin-top: 5vw;
+  width: 80%;
+  max-width: 1380px;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/overview/hero/macbook_air__f6z1e32o3866_large.jpg);
+}
+@media screen and (max-width: 767px) {
+  #main-mac .macbook-air15 figure {
+    background-image: url(https://www.apple.com/v/mac/home/bu/images/overview/hero/macbook_air__f6z1e32o3866_small.jpg);
+    background-position: center;
+    margin-bottom: 40px;
+  }
+}
+#main-mac .macPro {
+  height: 90vh;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-white_color);
+  margin-bottom: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main-mac .macPro .title-list li {
+  text-align: center;
+  margin-block: 5px;
+}
+#main-mac .macPro .title-list li:nth-child(1) {
+  color: #f06100;
+  font-size: 21px;
+}
+#main-mac .macPro .title-list li:nth-child(2) {
+  font-size: 48px;
+  font-weight: 600;
+}
+#main-mac .macPro .title-list li:nth-child(3) {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#main-mac .macPro .title-list li:nth-child(4) {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+#main-mac .macPro .title-list li:nth-child(5) .btns {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  margin-inline: auto;
+}
+#main-mac .macPro .title-list li:nth-child(5) .btns li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac .macPro .title-list li:nth-child(5) .btns li .buy {
+  padding-block: 8px;
+  padding-inline: 16px;
+  background-color: #0077ed;
+  border-radius: 100px;
+  color: var(--text-color);
+}
+#main-mac .macPro .title-list li:nth-child(5) .btns li:last-child {
+  color: var(--text-color-hover-blue);
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac .macPro figure {
+  margin-top: 5vw;
+  width: 100%;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/overview/hero/mac_pro__zkewy14r84iq_large.jpg);
+}
+@media screen and (max-width: 700px) {
+  #main-mac .macPro figure {
+    width: 90%;
+  }
+}
+#main-mac .macStudio {
+  height: 90vh;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-white_color);
+  margin-bottom: 1rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+#main-mac .macStudio .title-list li {
+  text-align: center;
+  margin-block: 5px;
+}
+#main-mac .macStudio .title-list li:nth-child(1) {
+  color: #f06100;
+  font-size: 21px;
+}
+#main-mac .macStudio .title-list li:nth-child(2) {
+  font-size: 48px;
+  font-weight: 600;
+}
+#main-mac .macStudio .title-list li:nth-child(3) {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#main-mac .macStudio .title-list li:nth-child(4) {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+#main-mac .macStudio .title-list li:nth-child(5) .btns {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  margin-inline: auto;
+}
+#main-mac .macStudio .title-list li:nth-child(5) .btns li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac .macStudio .title-list li:nth-child(5) .btns li .buy {
+  padding-block: 8px;
+  padding-inline: 16px;
+  background-color: #0077ed;
+  border-radius: 100px;
+  color: var(--text-color);
+}
+#main-mac .macStudio .title-list li:nth-child(5) .btns li:last-child {
+  color: var(--text-color-hover-blue);
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac .macStudio figure {
+  margin-top: 5vw;
+  width: 80%;
+  max-width: 1380px;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-image: url(https://www.apple.com/v/mac/home/bu/images/overview/hero/mac_studio__c2wojtx43pw2_large.jpg);
+}
+@media screen and (max-width: 700px) {
+  #main-mac .macStudio figure {
+    width: 60%;
+  }
+}
+#main-mac .compare {
+  display: block;
+}
+#main-mac .compare h1 {
+  text-align: center;
+}
+#main-mac .compare .btnsLaptopDesktop {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.5em;
+  position: relative;
+  padding-bottom: 4px;
+}
+#main-mac .compare .btnsLaptopDesktop li {
+  margin-inline: 10px;
+}
+#main-mac .compare .btnsLaptopDesktop::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+#main-mac .compare .laptop-gradient #desktop {
+  opacity: 0.6;
+}
+#main-mac .compare .laptop-gradient::after {
+  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(50%, #e5e5e5), to(#f3f4f6));
+  background: linear-gradient(to right, #000000 0%, #e5e5e5 50%, #f3f4f6 100%);
+}
+#main-mac .compare .desktop-gradient #laptop {
+  opacity: 0.6;
+}
+#main-mac .compare .desktop-gradient::after {
+  background: -webkit-gradient(linear, left top, right top, from(#f3f4f6), color-stop(50%, #e5e5e5), to(#000000));
+  background: linear-gradient(to right, #f3f4f6 0%, #e5e5e5 50%, #000000 100%);
+}
+#main-mac #macCompare {
+  width: 100%;
+  background-color: #fafafa;
+}
+#main-mac #macCompare .compareList {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  padding-top: 10px;
+  max-width: 1000px;
+}
+#main-mac #macCompare .compareList .compare-elem {
+  grid-column: span 3;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(1) img {
+  height: 70px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(2) {
+  margin-top: 7px;
+  margin-bottom: 28px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(2) img {
+  height: 15px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(3) ul li .title {
+  font-size: 24px;
+  font-weight: 600;
+  height: 2em;
+  margin-bottom: 1em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(3) ul li .chip {
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: 500;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(4) .description {
+  margin-top: 0.5em;
+  font-size: 14px;
+  height: 3em;
+  margin-bottom: 1em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(5) .price {
+  margin-top: 0.5em;
+  font-size: 14px;
+  height: 2em;
+  margin-bottom: 1em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(6) {
+  margin-top: 1em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(6) .btns {
+  width: 300px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(6) .btns li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(6) .btns li .buy {
+  padding-block: 8px;
+  padding-inline: 16px;
+  background-color: #0077ed;
+  border-radius: 100px;
+  padding-inline: 0.8em;
+  padding-block: 0.3em;
+  color: var(--bg-white_color);
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(6) .btns li:last-child {
+  color: var(--text-color-hover-blue);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(7) {
+  height: 0.5px;
+  width: 80%;
+  background-color: var(--bg-color-trueBlack);
+  margin-bottom: 1em;
+  opacity: 0.4;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(8) .display li:nth-child(1) {
+  font-size: 21px;
+  font-weight: 600;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(8) .display li:nth-child(2) {
+  font-size: 14px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(9) {
+  margin-bottom: 1em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(9) figure img {
+  height: 40px;
+  margin-bottom: 0.5em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(9) figure figcaption {
+  height: 2em;
+  font-size: 14px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(10) .cpulist {
+  height: 4em;
+  margin-bottom: 1.5em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(10) .cpulist li {
+  margin-block: 0.3em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(10) .cpulist li:nth-child(1), #main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(10) .cpulist li:nth-child(3) {
+  font-size: 14px;
+  margin: 0;
+  height: 1em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(10) .cpulist li:nth-child(2) {
+  height: 1em;
+  font-size: 21px;
+  font-weight: 600;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(11) .gpuList {
+  height: 4em;
+  margin-bottom: 1.5em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(11) .gpuList li {
+  margin-block: 0.3em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(11) .gpuList li:nth-child(1), #main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(11) .gpuList li:nth-child(3) {
+  font-size: 14px;
+  margin: 0;
+  height: 1em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(11) .gpuList li:nth-child(2) {
+  height: 1em;
+  font-size: 21px;
+  font-weight: 600;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(12) {
+  margin-bottom: 1.5rem;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(12) .memoryram img {
+  height: 35px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(12) .memoryram figcaption {
+  height: 2em;
+  font-size: 14px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(13) {
+  margin-bottom: 1.5em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(13) .memory li:nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(13) .memory li:nth-child(2) {
+  font-size: 14px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(14) {
+  margin-bottom: 1.5em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(14) .battery img {
+  height: 35px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(14) .battery figcaption {
+  font-size: 14px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(15) {
+  margin-bottom: 1.5em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(15) .camera img {
+  height: 35px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(15) .camera figcaption {
+  font-size: 14px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(16) {
+  margin-bottom: 1.5em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(16) .audio img {
+  height: 35px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(16) .audio figcaption p {
+  font-size: 14px;
+  height: 4em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(17) {
+  margin-bottom: 1.5em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(17) .weight li:nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(17) .weight li:nth-child(2) {
+  font-size: 14px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(18) {
+  margin-bottom: 1.5em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(18) .accessSecure img {
+  height: 35px;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(18) .accessSecure figcaption p {
+  font-size: 14px;
+  height: 4em;
+}
+#main-mac #macCompare .compareList .compare-elem .elem-list li:nth-child(19) {
+  height: 1px;
+  width: 80%;
+  background-color: var(--bg-color-trueBlack);
+  margin-bottom: 1em;
+  opacity: 0.4;
+}
+#main-mac #macCompare .comparelistMac {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  padding-top: 10px;
+  max-width: 1000px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem {
+  grid-column: span 3;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(1) img {
+  height: 150px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(2) {
+  margin-top: 7px;
+  margin-bottom: 28px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(2) img {
+  height: 15px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(3) .title {
+  font-size: 24px;
+  font-weight: 600;
+  height: 2em;
+  margin-bottom: 1em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(4) .description {
+  margin-top: 0.5em;
+  font-size: 14px;
+  height: 3em;
+  margin-bottom: 1em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(5) .price {
+  margin-top: 0.5em;
+  font-size: 14px;
+  height: 2em;
+  margin-bottom: 1em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(6) {
+  margin-top: 1em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(6) .btns {
+  width: 300px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(6) .btns li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(6) .btns li .buy {
+  padding-block: 8px;
+  padding-inline: 16px;
+  background-color: #0077ed;
+  border-radius: 100px;
+  padding-inline: 0.8em;
+  padding-block: 0.3em;
+  color: var(--bg-white_color);
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(6) .btns li:last-child {
+  color: var(--text-color-hover-blue);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(7) {
+  height: 1px;
+  width: 80%;
+  background-color: var(--bg-color-trueBlack);
+  margin-bottom: 1em;
+  opacity: 0.4;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(8) {
+  margin-bottom: 1em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(8) .chip img {
+  height: 40px;
+  margin-bottom: 0.5em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(8) .chip figcaption {
+  height: 2em;
+  font-size: 14px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(9) .cpulist {
+  height: 4em;
+  margin-block: 1.5em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(9) .cpulist li {
+  margin-block: 0.3em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(9) .cpulist li:nth-child(1), #main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(9) .cpulist li:nth-child(3) {
+  font-size: 14px;
+  margin: 0;
+  height: 1em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(9) .cpulist li:nth-child(2) {
+  height: 1em;
+  font-size: 21px;
+  font-weight: 600;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(10) .gpulist {
+  height: 4em;
+  margin-block: 1.5em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(10) .gpulist li {
+  margin-block: 0.3em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(10) .gpulist li:nth-child(1), #main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(10) .gpulist li:nth-child(3) {
+  font-size: 14px;
+  margin: 0;
+  height: 1em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(10) .gpulist li:nth-child(2) {
+  height: 1em;
+  font-size: 21px;
+  font-weight: 600;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(11) {
+  margin-bottom: 1.5rem;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(11) .memoryram img {
+  height: 35px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(11) .memoryram figcaption {
+  height: 2em;
+  font-size: 14px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(12) {
+  margin-block: 1.5em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(12) .memory li:nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(12) .memory li:nth-child(2) {
+  font-size: 14px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(13) {
+  margin-block: 1.5em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(13) .minus {
+  height: 3.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(13) .display li:nth-child(1) {
+  font-size: 21px;
+  font-weight: 600;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(13) .display li:nth-child(2) {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(13) .display li:nth-child(3) {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(14) {
+  margin-block: 1.5em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(14) .minus {
+  height: 6.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(14) .camera img {
+  height: 35px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(14) .camera figcaption {
+  font-size: 14px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(15) {
+  margin-block: 1.5em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(15) .minus {
+  height: 6.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(15) .accessSecure img {
+  height: 35px;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(15) .accessSecure figcaption p {
+  font-size: 14px;
+  height: 4em;
+}
+#main-mac #macCompare .comparelistMac .compare-elem .elem-list li:nth-child(16) {
+  height: 1px;
+  width: 80%;
+  background-color: var(--bg-color-trueBlack);
+  margin-bottom: 1em;
+  opacity: 0.4;
+}
+@media screen and (max-width: 1000px) {
+  #main-mac #macCompare .compareList, #main-mac #macCompare .comparelistMac {
+    margin-inline: 10px;
+    overflow: hidden;
+  }
+  #main-mac #macCompare .compareList .compare-elem, #main-mac #macCompare .comparelistMac .compare-elem {
+    grid-column: span 6;
+  }
+}
+
 #main-gallery .catalog-list-wrapper {
   background-color: var(--bg-white_color);
   display: -webkit-box;
@@ -2126,6 +3063,7 @@ textarea {
   width: -webkit-fill-available;
   width: -moz-available;
   width: fill-available;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 #main-gallery .catalog-list-wrapper .catalog-list .catalog-list-elem a span {
@@ -2693,11 +3631,6 @@ textarea {
   #main-iphone-catalog .iphone-catalog-wrapper ul li {
     grid-column: span 12;
   }
-  #main-gallery .catalog-list-wrapper .catalog-list {
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
-  }
   #main-gallery .accessories-slider h1 {
     font-size: 24px;
   }
@@ -2777,7 +3710,10 @@ textarea {
   .main-index .iphone14 .btns li a {
     font-size: 16px;
   }
-  .main-iphone .catalog-list-wrapper .catalog-list {
+  .catalog-list-wrapper .catalog-list {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
     border-right: 3px solid #cac7c7;
     border-left: 3px solid #cac7c7;
   }
@@ -2819,6 +3755,15 @@ textarea {
   }
 }
 @media screen and (max-width: 500px) {
+  #main-mac .announcement-bar {
+    display: block;
+  }
+  #main-mac .announcement-bar p,
+  #main-mac .announcement-bar a {
+    display: block;
+    margin-inline: auto !important;
+    text-align: center;
+  }
   .home_staff {
     width: 95% !important;
   }

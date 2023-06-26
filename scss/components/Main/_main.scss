@@ -1204,6 +1204,786 @@
         }
     }
 }
+
+// ! Mac
+#main-mac{
+    .catalog-list-wrapper {
+        background-color: var(--bg-white_color);
+        display: flex;
+        justify-content: center;
+        padding-block: 7px;
+
+        .catalog-list {
+            display: flex;
+            justify-content: space-around;
+            overflow-x: auto;
+
+            .catalog-list-elem {
+                margin-inline: 20px;
+                #macbook-air{
+                    figure{
+                        background-image: url(	https://www.apple.com/v/mac/home/bu/images/familybrowser/macbookair_light__f0o95rwae8ae_large.svg);
+                    }
+                }
+                #macbook-pro{
+                    figure{
+                        background-image: url(	https://www.apple.com/v/mac/home/bu/images/familybrowser/macbook_pro_light__e791sjqzt32a_large.svg);
+                    }
+                }
+                #imac24{
+                    figure{
+                        background-image: url(	https://www.apple.com/v/mac/home/bu/images/familybrowser/imac_24_light__colyztscbeeu_large.svg);
+                    }
+                }
+                #macmini{
+                    figure{
+                        background-image: url(	https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_mini_light__frtahmzmd4mm_large.svg);
+                    }
+                }
+                #mac-studio{
+                    figure{
+                        background-image: url(	https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_mini_light__frtahmzmd4mm_large.svg);
+                    }
+                }
+                #macpro{
+                    figure{
+                        background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_pro_light__cj4dvg7thx5y_large.svg
+                        );
+                    }
+                }
+                #compare{
+                    figure{
+                        background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_compare_light__emml1umdv9m6_large.svg);
+                    }
+                }
+                #displays{
+                    figure{
+                        background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/displays_light__ewxqx5obdxci_large.svg);
+                    }
+                }
+                #accessories{
+                    figure{
+                        background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_accessories_light__cuds10wyptyu_large.svg);
+                    }
+                }
+                #sonoma{
+                    figure{
+                        background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_os_light__d0zczt34scq6_large.svg);
+                    }
+                }
+                #shopMac{
+                    figure{
+                        background-image: url(https://www.apple.com/v/mac/home/bu/images/familybrowser/mac_shop_light__layuggud1xe2_large.svg);
+                    }
+                }
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        span {
+                            &:nth-child(2) {
+                                color: #0066cc;
+                            }
+                        }
+                    }
+
+                    figure {
+                        height: 54px;
+                        background-position: center;
+                        background-size: contain;
+                        width: 100%;
+                        background-repeat: no-repeat;
+                    }
+
+                    span {
+                        font-size: 12px;
+
+                        &:nth-child(2) {
+                            color: #1d1d1f;
+                            text-wrap: nowrap;
+                        }
+
+                        &:nth-child(3) {
+                            color: #f06100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .announcement-bar{
+        display: flex;
+        justify-content: center;
+        padding-block: 10px;
+        background-color: #f5f5f7;
+        p,
+        a{
+            margin-inline-end: .3rem;
+            font-size: 16px;
+        }
+        a{
+            color: var(--text-color-hover-blue);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .macbook-air15{
+        @include macBlock;
+        justify-content: space-around;
+        @include titleList;
+        .title-list{
+            margin-top: -5vh;
+        }
+        figure{
+            margin-top: 5vw;
+            width: 80%;
+            max-width: 1380px;
+            height: 30vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(https://www.apple.com/v/mac/home/bu/images/overview/hero/macbook_air__f6z1e32o3866_large.jpg);
+        }
+        @media screen and (max-width: 767px) {
+            figure{
+                background-image: url(	https://www.apple.com/v/mac/home/bu/images/overview/hero/macbook_air__f6z1e32o3866_small.jpg);
+                background-position: center;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .macPro{
+        @include macBlock;
+        justify-content: space-between;
+        @include titleList;
+        figure{
+            margin-top: 5vw;
+            width: 100%;
+            // max-width: 1380px;
+            height: 40vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-image: url(https://www.apple.com/v/mac/home/bu/images/overview/hero/mac_pro__zkewy14r84iq_large.jpg);
+        }
+        @media screen and (max-width: 700px){
+            figure{
+                width: 90%;
+            }
+        }
+        
+    }
+    .macStudio{
+        @include macBlock;
+        justify-content: space-around;
+        @include titleList;
+        figure{
+            margin-top: 5vw;
+            width: 80%;
+            max-width: 1380px;
+            height: 30vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-image: url(https://www.apple.com/v/mac/home/bu/images/overview/hero/mac_studio__c2wojtx43pw2_large.jpg);
+        }
+        @media screen and (max-width: 700px){
+            figure{
+                width: 60%;
+            }
+        }
+    }
+    .compare{
+        display: block;
+        h1{
+            text-align: center;
+        }
+        .btnsLaptopDesktop{
+            width: fit-content;
+            margin-inline: auto;
+            display: flex;
+            justify-content: center;
+            li{
+                margin-inline: 10px;
+            }
+            // border-bottom: #000 solid 1px;
+            margin-bottom: 1.5em;
+            position: relative;
+            padding-bottom: 4px;
+            &::after{
+                content: '';
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -10px;
+                // background: #000000;
+        }
+        }
+        .laptop-gradient{
+            #desktop{
+                opacity: .6;
+            }
+            &::after{
+                background: linear-gradient(to right,  #000000 0%,#e5e5e5 50%,#f3f4f6 100%);
+            }
+        }
+        .desktop-gradient{
+            #laptop{
+                opacity: .6;
+            }
+            &::after{
+                background: linear-gradient(to right,  #f3f4f6 0%,#e5e5e5 50%,#000000 100%);
+            }
+        }
+        
+    }
+    // @keyframes gradient {
+    //     from{
+    //         .btnsLaptopDesctop::after{
+    //             background: #000000;
+    //             background: -moz-linear-gradient(left,  #000000 0%, #e5e5e5 50%, #e5e5e5 73%, #e5e5e5 100%);
+    //             background: -webkit-linear-gradient(left,  #000000 0%,#e5e5e5 50%,#e5e5e5 73%,#e5e5e5 100%);
+    //             background: linear-gradient(to right,  #000000 0%,#e5e5e5 50%,#e5e5e5 73%,#e5e5e5 100%);
+    //             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#e5e5e5',GradientType=1 );
+    //         }
+    //     }
+    //     to{
+    //         .btnsLaptopDesctop:after{
+    //             background: #f3f4f6!important;
+    //             background: -moz-linear-gradient(left,  #f3f4f6 0%, #e5e5e5 50%, #000000 100%)!important;
+    //             background: -webkit-linear-gradient(left,  #f3f4f6 0%,#e5e5e5 50%,#000000 100%)!important;
+    //             
+                
+    
+    //         }
+    //     }
+    // }
+    #macCompare{
+        width: 100%;
+        background-color: #fafafa;
+        .compareList{
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            margin-left: auto;
+            margin-right: auto;
+            grid-column-gap: 24px;
+            grid-row-gap: 24px;
+            padding-top: 10px;
+            max-width: 1000px;
+            .compare-elem{
+                grid-column: span 3;
+                .elem-list{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    li{
+                        &:nth-child(1){
+                            img{
+                                height: 70px;
+                            }
+                        }
+                        &:nth-child(2){
+                            img{
+                                height: 15px;
+                            }
+                            margin-top: 7px;
+                            margin-bottom: 28px;
+                        }
+                        &:nth-child(3){
+                            ul{
+                                li{
+                                    .title{
+                                        font-size: 24px;
+                                        font-weight: 600;
+                                        height: 2em;
+                                        margin-bottom: 1em;
+                                    }
+                                    .chip{
+                                        font-size: 14px;
+                                        opacity: .6;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(4){
+                            .description{
+                                margin-top: .5em;
+                                font-size: 14px;
+                                height: 3em;
+                                margin-bottom: 1em;
+                            }
+                        }
+                        &:nth-child(5){
+                            .price{
+                                margin-top: .5em;
+                                font-size: 14px;
+                                height: 2em;
+                                margin-bottom: 1em;
+                            }
+                        }
+                        &:nth-child(6){
+                            margin-top: 1em;
+                            .btns {
+                                width: 300px;
+                                @include btnsBase;
+                                flex-direction: column;
+                                li {
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 14px;
+                                    .buy {
+                                        @include buyBtnBase;
+                                        padding-inline: .8em;
+                                        padding-block: .3em;
+                                        color: var(--bg-white_color);
+                                    }
+            
+                                    &:last-child {
+                                        color: var(--text-color-hover-blue);
+                                        // font-size: 16px;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(7){
+                                height: .5px;
+                                width: 80%;
+                                background-color: var(--bg-color-trueBlack);
+                                margin-bottom: 1em;
+                                opacity: .4;
+                        }
+                        &:nth-child(8){
+                            .display{
+                                li{
+                                    &:nth-child(1){
+                                        font-size: 21px;
+                                        font-weight: 600;
+                                    }
+                                    &:nth-child(2){
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(9){
+                            figure{
+                                img{
+                                    height: 40px;
+                                    margin-bottom: .5em;
+                                }
+                                figcaption{
+                                    height: 2em;
+                                    font-size: 14px;
+                                }
+                            }
+                            margin-bottom: 1em;
+                        }
+                        &:nth-child(10){
+                            .cpulist{
+                                height: 4em;
+                                margin-bottom: 1.5em;
+                                li{
+                                    margin-block: .3em;
+                                    &:nth-child(1), 
+                                    &:nth-child(3){
+                                        font-size: 14px;
+                                        margin: 0;
+                                        height: 1em;
+                                    }
+                                    &:nth-child(2){
+                                        height: 1em;
+                                        font-size: 21px;
+                                        font-weight: 600;
+                                        // margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(11){
+                            .gpuList{
+                                height: 4em;
+                                margin-bottom: 1.5em;
+                                li{
+                                    margin-block: .3em;
+                                    &:nth-child(1), 
+                                    &:nth-child(3){
+                                        font-size: 14px;
+                                        margin: 0;
+                                        height: 1em;
+                                    }
+                                    &:nth-child(2){
+                                        height: 1em;
+                                        font-size: 21px;
+                                        font-weight: 600;
+                                        // margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(12){
+                            margin-bottom: 1.5rem;
+                            .memoryram{
+                                img{
+                                    height: 35px;
+                                }
+                                figcaption{
+                                    height: 2em;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        &:nth-child(13){
+                            margin-bottom: 1.5em;
+                            .memory{
+                                li{
+                                    &:nth-child(1){
+                                        font-size: 24px;
+                                        font-weight: 600;
+                                    }
+                                    &:nth-child(2){
+                                        font-size: 14px;
+                                    }
+
+                                }
+                            }
+                        }
+                        &:nth-child(14){
+                            margin-bottom: 1.5em;
+                            .battery{
+                                img{
+                                    height: 35px;
+                                }
+                                figcaption{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        &:nth-child(15){
+                            margin-bottom: 1.5em;
+                            .camera{
+                                img{
+                                    height: 35px;
+                                }
+                                figcaption{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        &:nth-child(16){
+                            margin-bottom: 1.5em;
+                            .audio{
+                                img{
+                                    height: 35px;
+                                }
+                                figcaption{
+                                    p{
+                                        font-size: 14px;
+                                        height: 4em;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(17){
+                            margin-bottom: 1.5em;
+                            .weight{
+                                li{
+                                    &:nth-child(1){
+                                        font-size: 24px;
+                                        font-weight: 600;
+                                    }
+                                    &:nth-child(2){
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(18){
+                            margin-bottom: 1.5em;
+                            .accessSecure{
+                                img{
+                                    height: 35px;
+                                }
+                                figcaption{
+                                    p{
+                                        font-size: 14px;
+                                        height: 4em;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(19){ 
+                            height: 1px;
+                            width: 80%;
+                            background-color: var(--bg-color-trueBlack);
+                            margin-bottom: 1em;
+                            opacity: .4;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .comparelistMac{
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            margin-left: auto;
+            margin-right: auto;
+            grid-column-gap: 24px;
+            grid-row-gap: 24px;
+            padding-top: 10px;
+            max-width: 1000px;
+            .compare-elem{
+                grid-column: span 3;
+                .elem-list{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    li{
+                        &:nth-child(1){
+                            img{
+                                height: 150px;
+                            }
+                        }
+                        &:nth-child(2){
+                            img{
+                                height: 15px;
+                            }
+                            margin-top: 7px;
+                            margin-bottom: 28px;
+                        }
+                        &:nth-child(3){
+                            .title{
+                                font-size: 24px;
+                                font-weight: 600;
+                                height: 2em;
+                                margin-bottom: 1em;
+                            }
+                        }
+                        &:nth-child(4){
+                            .description{
+                                margin-top: .5em;
+                                font-size: 14px;
+                                height: 3em;
+                                margin-bottom: 1em;
+                            }
+                        }
+                        &:nth-child(5){
+                            .price{
+                                margin-top: .5em;
+                                font-size: 14px;
+                                height: 2em;
+                                margin-bottom: 1em;
+                            }
+                        }
+                        &:nth-child(6){
+                            margin-top: 1em;
+                            .btns {
+                                width: 300px;
+                                @include btnsBase;
+                                flex-direction: column;
+                                li {
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 14px;
+                                    .buy {
+                                        @include buyBtnBase;
+                                        padding-inline: .8em;
+                                        padding-block: .3em;
+                                        color: var(--bg-white_color);
+                                    }
+            
+                                    &:last-child {
+                                        color: var(--text-color-hover-blue);
+                                        // font-size: 16px;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(7){
+                            height: 1px;
+                            width: 80%;
+                            background-color: var(--bg-color-trueBlack);
+                            margin-bottom: 1em;
+                            opacity: .4;
+                        }
+                        &:nth-child(8){
+                            .chip{
+                                img{
+                                    height: 40px;
+                                    margin-bottom: .5em;
+                                }
+                                figcaption{
+                                    height: 2em;
+                                    font-size: 14px;
+                                }
+                            }
+                            margin-bottom: 1em;
+                        }
+                        &:nth-child(9){
+                            .cpulist{
+                                height: 4em;
+                                margin-block: 1.5em;
+                                li{
+                                    margin-block: .3em;
+                                    &:nth-child(1), 
+                                    &:nth-child(3){
+                                        font-size: 14px;
+                                        margin: 0;
+                                        height: 1em;
+                                    }
+                                    &:nth-child(2){
+                                        height: 1em;
+                                        font-size: 21px;
+                                        font-weight: 600;
+                                        // margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(10){
+                            .gpulist{
+                                height: 4em;
+                                margin-block: 1.5em;
+                                li{
+                                    margin-block: .3em;
+                                    &:nth-child(1), 
+                                    &:nth-child(3){
+                                        font-size: 14px;
+                                        margin: 0;
+                                        height: 1em;
+                                    }
+                                    &:nth-child(2){
+                                        height: 1em;
+                                        font-size: 21px;
+                                        font-weight: 600;
+                                        // margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(11){
+                            margin-bottom: 1.5rem;
+                            .memoryram{
+                                img{
+                                    height: 35px;
+                                }
+                                figcaption{
+                                    height: 2em;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        &:nth-child(12){
+                            margin-block: 1.5em;
+                            .memory{
+                                li{
+                                    &:nth-child(1){
+                                        font-size: 24px;
+                                        font-weight: 600;
+                                    }
+                                    &:nth-child(2){
+                                        font-size: 14px;
+                                    }
+
+                                }
+                            }
+                        }
+                        &:nth-child(13){
+                            margin-block: 1.5em;
+                            .minus{
+                                height: 3.5em;
+                                display: flex;
+                                align-items: center;
+                                // font-size: 35px;
+                            }
+                            .display{
+                                li{
+                                    &:nth-child(1){
+                                        font-size: 21px;
+                                        font-weight: 600;
+                                    }
+                                    &:nth-child(2){
+                                        font-size: 14px;
+                                        padding: 0;
+                                        margin: 0;
+                                    }
+                                    &:nth-child(3){
+                                        font-size: 14px;
+                                        padding: 0;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(14){
+                            margin-block: 1.5em;
+                            .minus{
+                                height: 6.5em;
+                                display: flex;
+                                align-items: center;
+                            }
+                            .camera{
+                                img{
+                                    height: 35px;
+                                }
+                                figcaption{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        &:nth-child(15){
+                            margin-block: 1.5em;
+                            .minus{
+                                height: 6.5em;
+                                display: flex;
+                                align-items: center;
+                            }
+                            .accessSecure{
+                                img{
+                                    height: 35px;
+                                }
+                                figcaption{
+                                    p{
+                                        font-size: 14px;
+                                        height: 4em;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(16){
+                            height: 1px;
+                            width: 80%;
+                            background-color: var(--bg-color-trueBlack);
+                            margin-bottom: 1em;
+                            opacity: .4;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 1000px){
+            .compareList, .comparelistMac{
+                margin-inline: 10px;
+                overflow: hidden;
+                .compare-elem{
+                    grid-column: span 6;
+                }
+            }
+        }
+    }
+        
+}
+
 // ! TV
 #main-gallery{
     .catalog-list-wrapper {
@@ -1272,6 +2052,7 @@
                         height: 54px;
                         background-position: center;
                         width: fill-available;
+                        background-size: contain;
                         background-repeat: no-repeat;
                     }
 
@@ -1770,7 +2551,6 @@
         
 
 }
-
 @media screen and (max-width: 900px) {
     #main-iphone-catalog{
         h1{
@@ -1785,11 +2565,6 @@
         }
     }
     #main-gallery{
-        .catalog-list-wrapper{
-            .catalog-list{
-                justify-content: unset;
-            }
-        }
         .accessories-slider{
             h1{
                 font-size: 24px;
@@ -1950,13 +2725,14 @@
         // }
     }
 
-    .main-iphone {
-        .catalog-list-wrapper {
-            .catalog-list {
-                border-right: 3px solid #cac7c7;
-                border-left: 3px solid #cac7c7;
-            }
+    .catalog-list-wrapper {
+        .catalog-list {
+            justify-content: start!important;
+            border-right: 3px solid #cac7c7;
+            border-left: 3px solid #cac7c7;
         }
+    }
+    .main-iphone {
         .iphoneSE {
             .iphoneSE-title-list {
                 li {
@@ -2017,6 +2793,17 @@
     }
 }
 @media screen and (max-width: 500px){
+    #main-mac{
+        .announcement-bar{
+            display: block;
+            p,
+            a{
+                display: block;
+                margin-inline: auto!important;
+                text-align: center;
+            }
+        }
+    }
     .home_staff{
         width: 95%!important;
         h1{
