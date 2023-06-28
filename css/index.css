@@ -2256,7 +2256,7 @@ textarea {
 #main-mac .macbook-air15 figure {
   margin-top: 5vw;
   width: 80%;
-  max-width: 1380px;
+  max-width: 1000px;
   height: 30vh;
   background-position: center;
   background-size: contain;
@@ -2353,6 +2353,7 @@ textarea {
 #main-mac .macPro figure {
   margin-top: 5vw;
   width: 100%;
+  max-width: 1000px;
   height: 40vh;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2446,7 +2447,7 @@ textarea {
 #main-mac .macStudio figure {
   margin-top: 5vw;
   width: 80%;
-  max-width: 1380px;
+  max-width: 1000px;
   height: 30vh;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2995,6 +2996,209 @@ textarea {
   }
   #main-mac #macCompare .compareList .compare-elem, #main-mac #macCompare .comparelistMac .compare-elem {
     grid-column: span 6;
+  }
+}
+
+#main-mac-catalog {
+  background-color: var(--bg-white-color-1);
+}
+#main-mac-catalog #filters .filter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main-mac-catalog #filters .filter-list .chip-filter {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#main-mac-catalog #filters .filter-list .chip-filter a {
+  padding-inline: 20px;
+  padding-block: 10px;
+}
+#main-mac-catalog #filters .filter-list .chip-filter a:focus {
+  border: 1px solid var(--text-color-hover-blue) !important;
+  z-index: 2;
+}
+#main-mac-catalog #filters .filter-list .chip-filter a:nth-child(1) {
+  border: 1px solid var(--text-grey-color);
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  margin-right: -1px;
+}
+#main-mac-catalog #filters .filter-list .chip-filter a:nth-child(2) {
+  border: 1px solid var(--text-grey-color);
+}
+#main-mac-catalog #filters .filter-list .chip-filter a:nth-child(3) {
+  margin-left: -1px;
+  border: 1px solid var(--text-grey-color);
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+#main-mac-catalog #filters .filter-list .color-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+#main-mac-catalog #filters .filter-list .color-filter li {
+  margin: 5px;
+}
+#main-mac-catalog #filters .filter-list .color-filter li a img {
+  border-radius: 50px;
+}
+#main-mac-catalog h1 {
+  text-align: center;
+}
+#main-mac-catalog #mac-catalog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  padding: 0 24px;
+}
+#main-mac-catalog #mac-catalog-wrapper .whatsInBox {
+  grid-column: span 12;
+  margin-top: 20px;
+}
+#main-mac-catalog #mac-catalog-wrapper .whatsInBox ul {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row-gap: 24px;
+  padding: 0 24px;
+}
+#main-mac-catalog #mac-catalog-wrapper .whatsInBox ul li {
+  grid-column: span 4;
+  display: block;
+}
+#main-mac-catalog #mac-catalog-wrapper .whatsInBox ul li img {
+  background-color: #fafafa;
+  width: 100%;
+}
+#main-mac-catalog #mac-catalog-wrapper .whatsInBox ul li p {
+  margin-block: 1em;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-grey-color);
+  opacity: 0.8;
+}
+#main-mac-catalog #mac-catalog-wrapper .zeroResults {
+  grid-column: span 12;
+  text-align: center;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem {
+  grid-column: span 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-white-color-1);
+  border-radius: 20px;
+  padding-bottom: 20px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li {
+  display: block;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li p {
+  margin-inline: auto;
+  width: 90%;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li .chip {
+  display: block;
+  position: relative;
+  margin-right: 5%;
+  margin-left: auto;
+  margin-top: -17%;
+  margin-bottom: 10px;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li .color {
+  width: 7%;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li .color-text {
+  font-size: 12px;
+  color: var(--text-grey-color);
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(1) {
+  text-align: center;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(1) .computer {
+  width: 90%;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(5), #main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(6), #main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(7), #main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(8) {
+  font-size: 24px;
+  font-weight: 600;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(9), #main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(10), #main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(11), #main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(12), #main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(13), #main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(14), #main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(15), #main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(16) {
+  font-size: 14px;
+  margin-top: 5px;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(16) {
+  margin-bottom: 15px;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(17) {
+  font-size: 24px;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(18) {
+  text-align: center;
+  margin-inline: auto;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 90%;
+  background-color: var(--text-color-hover-blue);
+  padding-block: 10px;
+}
+#main-mac-catalog #mac-catalog-wrapper .mac-catalog-elem li:nth-child(18) .buy {
+  font-size: 16px;
+  color: var(--bg-white-color-1);
+}
+@media screen and (max-width: 600px) {
+  #main-mac-catalog .mac-catalog-elem {
+    grid-column: span 12 !important;
+  }
+  #main-mac-catalog #filters {
+    width: 90%;
+    margin-inline: auto;
   }
 }
 

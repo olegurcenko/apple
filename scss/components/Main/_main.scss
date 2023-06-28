@@ -1341,7 +1341,7 @@
         figure{
             margin-top: 5vw;
             width: 80%;
-            max-width: 1380px;
+            max-width: 1000px;
             height: 30vh;
             background-position: center;
             background-size: contain;
@@ -1363,7 +1363,7 @@
         figure{
             margin-top: 5vw;
             width: 100%;
-            // max-width: 1380px;
+            max-width: 1000px;
             height: 40vh;
             background-size: contain;
             background-repeat: no-repeat;
@@ -1384,7 +1384,7 @@
         figure{
             margin-top: 5vw;
             width: 80%;
-            max-width: 1380px;
+            max-width: 1000px;
             height: 30vh;
             background-size: contain;
             background-repeat: no-repeat;
@@ -1983,6 +1983,205 @@
         }
     }
         
+}
+// ! mac-catalog
+
+#main-mac-catalog{
+    background-color: var(--bg-white-color-1);
+    #filters{
+        .filter-list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .chip-filter{
+                width: fit-content;
+                justify-content: center;
+                // border: 1px solid var(--text-grey-color);
+                border-radius: 200px;
+                display: flex;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                a{
+                    &:focus{
+                        border: 1px solid var(--text-color-hover-blue)!important;
+                        z-index: 2;
+                    }
+                    &:nth-child(1){
+                        border: 1px solid var(--text-grey-color);
+                        border-top-left-radius: 200px;
+                        border-bottom-left-radius: 200px;
+                        margin-right: -1px;
+                    }
+                    &:nth-child(2){
+                        border: 1px solid var(--text-grey-color);
+                    }
+                    &:nth-child(3){
+                        margin-left: -1px;
+                        border: 1px solid var(--text-grey-color);
+                        border-top-right-radius: 200px;
+                        border-bottom-right-radius: 200px;
+                    }
+                    padding-inline: 20px;
+                    padding-block: 10px;
+                }
+            }
+            .color-filter{
+                display: flex;
+                // background-color: var(--bg-white-color-1);
+                margin-bottom: 15px;
+                li{
+                    margin: 5px;
+                    a{
+                        img{
+                            border-radius: 50px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+            
+    }
+    h1{
+        text-align: center;
+    }
+    #mac-catalog-wrapper{
+        .whatsInBox{
+            grid-column: span 12;
+            margin-top: 20px;
+            ul{
+                display: grid;
+                grid-template-columns: repeat(12,minmax(0,1fr));
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                // grid-column-gap: 24px;
+                grid-row-gap: 24px;
+                padding: 0 24px;
+                li{
+                    grid-column: span 4;
+                    display: block;
+                    img{
+                        background-color: #fafafa;
+                        width: 100%;
+                        // padding-inline: auto;
+                    }
+                    p{
+                        margin-block: 1em;
+                        text-align: center;
+                        font-size: 14px;
+                        color: var(--text-grey-color);
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+        .zeroResults{
+            grid-column: span 12;
+            text-align: center;
+        }
+        display: grid;
+        grid-template-columns: repeat(12,minmax(0,1fr));
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        padding: 0 24px;
+        .mac-catalog-elem{
+            grid-column: span 6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--bg-white-color-1);
+            border-radius: 20px;
+            padding-bottom: 20px;
+            transition-duration: .5s;
+            &:hover{
+                transition-duration: 1s;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }
+            li{
+                display: block;
+                p{
+                    margin-inline: auto;
+                    width: 90%;
+                }
+                .chip{
+                    display: block;
+                    position: relative;
+                    margin-right: 5%;
+                    margin-left: auto;
+                    margin-top: -17%;
+                    margin-bottom: 10px;
+                }
+                .color{
+                    width: 7%;
+                    margin-left: 5%;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+                .color-text{
+                    font-size: 12px;
+                    color: var(--text-grey-color);
+                }
+                &:nth-child(1){
+                    text-align: center;
+                    .computer{
+                        width: 90%;
+                    }
+                }
+                &:nth-child(5), 
+                &:nth-child(6), 
+                &:nth-child(7), 
+                &:nth-child(8){
+                    font-size: 24px;
+                    font-weight: 600;
+                } 
+                &:nth-child(9),
+                &:nth-child(10),
+                &:nth-child(11),
+                &:nth-child(12),
+                &:nth-child(13),
+                &:nth-child(14),
+                &:nth-child(15),
+                &:nth-child(16){
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+                &:nth-child(16){
+                    margin-bottom: 15px;
+                }
+                &:nth-child(17){
+                    font-size: 24px;
+                    // font-weight: 600;
+                }
+                &:nth-child(18){
+                    text-align: center;
+                    margin-inline: auto;
+                    margin-top: 10px;
+                    border-radius: 20px;
+                    width: 90%;
+                    background-color: var(--text-color-hover-blue);
+                    padding-block: 10px;
+                    .buy{
+                        font-size: 16px;
+                        color: var(--bg-white-color-1);
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 600px){
+        .mac-catalog-elem{
+            grid-column: span 12!important;
+        }
+        #filters{
+            width: 90%;
+            margin-inline: auto;
+        }
+    }
 }
 
 // ! TV
